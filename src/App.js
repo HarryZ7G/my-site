@@ -1,38 +1,35 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Frost from './Components/FrostedGlass/index.js';
+import RefreshMsg from './Components/RefreshMsg/index.js';
+import ScrollMsg from './Components/ScrollMsg/index.js';
+import About from './Components/About/index.js';
+// import Skills from '../../Components/Skills/index.js';
+import BackdropFilter from "react-backdrop-filter";
+import Profile from './images/Profile.jpg';
+import './style/title.css';
+import 'animate.css';
 import './App.css'
-// Pages
-import LandingPage from './Pages/LandingPage'
-import HomePage from './Pages/HomePage'
-import Test from './Pages/Test'
-
-const theme = createMuiTheme({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#1976d2',
-    },
-    background: {
-      default: '#fafafa',
-      paper: '#fff',
-    },
-    text: {
-      primary: '#444444'
-    },
-  },
-});
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-        <Router>
-            <Switch>
-                <Route exact path="/" render={() => <HomePage />} />
-                <Route exact path="/test" render={() => <Test />} />
-            </Switch>
-        </Router>
-    </ThemeProvider>
+    <div className="root animate__animated animate__fadeIn animate__delay-1s" id="root">
+        <div className="title-back">
+          <RefreshMsg/>
+          <Frost/>
+          <ScrollMsg/>
+        </div>
+        <BackdropFilter filter={"blur(15px)"}>
+          <div className="intro">
+            <div className="imgCon">
+              <img src={Profile} alt="A picture of me" style={{width: "100%", 
+                                                               height: "100%", 
+                                                               objectFit: "cover",
+                                                               borderRadius: "100%"}}/>
+            </div>
+            <About/>
+          </div>
+        </BackdropFilter>
+      </div>
   );
 }
 

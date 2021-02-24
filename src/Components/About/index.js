@@ -1,12 +1,11 @@
 import React from 'react';
-import '../../style/title.css';
+import '../../style/intro.css';
 
 class About extends React.Component{
   render() {
     return (
       <div className="section">
-        <text className="section-title" style={{textAlign: "end", 
-                                                marginRight: "80px"}}>
+        <text className="section-title" style={{textAlign: "end"}}>
           About <br/>Me
         </text>
         <div class="v-line"></div>
