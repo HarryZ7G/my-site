@@ -3,16 +3,6 @@ import '../../style/title.css';
 import 'animate.css';
 
 class ScrollMsg extends React.Component {
-  render() {
-    return (
-      <div className="blackout animate__animated animate__fadeInUp animate__delay-3s">
-        <h4 className="message animate__animated animate__fadeInDown animate__delay-4s" 
-            id="message"
-            style={{paddingTop: "5px"}}>Scroll down</h4>
-      </div>
-    )
-  };
-  
   constructor(props) {
     super(props);
     this.state = {seconds: 0};
@@ -42,6 +32,16 @@ class ScrollMsg extends React.Component {
       this.setState({seconds: 4});
     }
   }
+
+  render() {
+    return (
+      <div className="blackout animate__animated animate__fadeIn animate__delay-2s">
+        <h4 className="message animate__animated animate__fadeInDown animate__delay-3s" 
+            id="message"
+            style={{paddingTop: "5px"}}>Scroll down</h4>
+      </div>
+    )
+  };
 };
 
 export default ScrollMsg;

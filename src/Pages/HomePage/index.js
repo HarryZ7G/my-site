@@ -18,7 +18,7 @@ class HomePage extends React.Component{
           <Frost/>
           <ScrollMsg/>
         </div>
-        <BackdropFilter filter={"blur(15px)"}>
+        {/* <BackdropFilter filter={"blur(15px)"}> */}
           <div className="intro">
             <div className="imgCon">
               <img src={Profile} alt="A picture of me" style={{width: "100%", 
@@ -28,7 +28,7 @@ class HomePage extends React.Component{
             </div>
             <About/>
           </div>
-        </BackdropFilter>
+        {/* </BackdropFilter> */}
       </div>
     )
   };

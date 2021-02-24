@@ -3,14 +3,25 @@ html, body {
   overflow-x: hidden;
 }
 
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://source.unsplash.com/collection/42551867/1920x1080);
+  background-attachment: fixed;
+  background-size: cover;
+  transition: 0.5 ease;
+  /* filter: blur(10px); */
+}
+
 .root{
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background-image: url(https://source.unsplash.com/collection/4773283);
+  /* background-image: url(https://source.unsplash.com/collection/4773283); */
   /* background-image: url(https://source.unsplash.com/collection/219941); */
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-attachment: fixed;
+  background-size: cover; */
 }
 
 .title-back {

@@ -1,36 +1,44 @@
-import React from 'react'
+import React from 'react';
+import About from './Components/About/index.js';
 import Frost from './Components/FrostedGlass/index.js';
+import ProfileImg from './Components/ProfileImg/index.js';
 import RefreshMsg from './Components/RefreshMsg/index.js';
 import ScrollMsg from './Components/ScrollMsg/index.js';
-import About from './Components/About/index.js';
-// import Skills from '../../Components/Skills/index.js';
+import Skills from './Components/Skills/index.js';
 import BackdropFilter from "react-backdrop-filter";
-import Profile from './images/Profile.jpg';
-import './style/title.css';
 import 'animate.css';
 import './App.css'
+import { isElement } from 'react-dom/cjs/react-dom-test-utils.development';
 
-function App() {
-  return (
-    <div className="root animate__animated animate__fadeIn animate__delay-1s" id="root">
+class App extends React.Component {
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', function(){
+      if (window.pageYOffset < window.innerHeight / 2) {
+        document.getElementById("back").style.filter = `blur(${window.pageYOffset / (window.innerHeight/2) * 15}px)`;
+      } else {
+        document.getElementById("back").style.filter = "blur(15px)";
+      }
+    });
+  };
+
+  render() {
+    return (
+      <div className="root" id="root">
+        <div className="background animate__animated animate__fadeIn animate__delay-1s" id="back"></div>
         <div className="title-back">
           <RefreshMsg/>
           <Frost/>
           <ScrollMsg/>
         </div>
-        <BackdropFilter filter={"blur(15px)"}>
-          <div className="intro">
-            <div className="imgCon">
-              <img src={Profile} alt="A picture of me" style={{width: "100%", 
-                                                               height: "100%", 
-                                                               objectFit: "cover",
-                                                               borderRadius: "100%"}}/>
-            </div>
-            <About/>
-          </div>
-        </BackdropFilter>
+        <div className="intro animate__animated animate__fadeIn animate__delay-2s">
+          <ProfileImg/>
+          <About/>
+          <Skills/>
+        </div>
       </div>
-  );
+    );
+  }
 }
 
 export default App;

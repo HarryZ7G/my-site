@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  height: 2000px;
+  height: 3000px;
   width: stretch;
   align-items: center;
   background-color: #00000044;
@@ -29,7 +29,11 @@
 .section-title {
   display: flex;
   height: fit-content;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 18vw;
+  text-align: end;
+  justify-content: end;
+  margin: 0;
   font-size: 7vw;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
@@ -39,14 +43,16 @@
 .section-content {
   display: flex;
   height: fit-content;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 56vw;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
 }
 
 .section-text {
-  margin-top: 1.9vw;
+  margin: 0;
+  margin-top: 2.3vw;
   display: flex;
   width: fit-content;
   font-size: 2.1vw;
@@ -61,4 +67,63 @@
   margin-left: 3vw;
   margin-right: 3vw;
   height: 14.5vw;
+}
+
+.h-line {
+  border: 0;
+  border-top: 0.3vw solid #FFFFFFAA;
+  margin-top: 7vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  width: 13vw;
+  border-style: dashed;
+}
+
+.section-icon {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.circle {
+  /* background-color: #FFFFFFAA; */
+  display: flex;
+  height: 12vw;
+  width: 12vw;
+  border-style: solid;
+  border-radius: 20vw;
+  border-width: 0.3vw;
+  border-color: #FFFFFFAA;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease
+}
+
+.circle:hover {
+  background-color: #FFFFFF88;
+}
+
+.icon-front {
+  width: 10vw;
+  opacity: 66%;
+}
+
+.icon-back {
+  margin-top: 0.5vw;
+  width: 9vw;
+  opacity: 66%;
+}
+
+.section-des {
+  margin-top: 1vw;
+  display: flex;
+  width: fit-content;
+  font-size: 2.1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  color: #FFFFFFAA;
 }
