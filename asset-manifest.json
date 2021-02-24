@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.062edffe.chunk.css",
-    "main.js": "/my-site/static/js/main.4181600f.chunk.js",
-    "main.js.map": "/my-site/static/js/main.4181600f.chunk.js.map",
-    "runtime-main.js": "/my-site/static/js/runtime-main.941b15db.js",
-    "runtime-main.js.map": "/my-site/static/js/runtime-main.941b15db.js.map",
+    "main.css": "/my-site/static/css/main.8cdf1b96.chunk.css",
+    "main.js": "/my-site/static/js/main.03d8b2e5.chunk.js",
+    "main.js.map": "/my-site/static/js/main.03d8b2e5.chunk.js.map",
+    "runtime-main.js": "/my-site/static/js/runtime-main.9d96c4dc.js",
+    "runtime-main.js.map": "/my-site/static/js/runtime-main.9d96c4dc.js.map",
     "static/css/2.a1596f27.chunk.css": "/my-site/static/css/2.a1596f27.chunk.css",
-    "static/js/2.4af8698a.chunk.js": "/my-site/static/js/2.4af8698a.chunk.js",
-    "static/js/2.4af8698a.chunk.js.map": "/my-site/static/js/2.4af8698a.chunk.js.map",
-    "static/js/3.a93e4fae.chunk.js": "/my-site/static/js/3.a93e4fae.chunk.js",
-    "static/js/3.a93e4fae.chunk.js.map": "/my-site/static/js/3.a93e4fae.chunk.js.map",
+    "static/js/2.9ccc09cc.chunk.js": "/my-site/static/js/2.9ccc09cc.chunk.js",
+    "static/js/2.9ccc09cc.chunk.js.map": "/my-site/static/js/2.9ccc09cc.chunk.js.map",
+    "static/js/3.b53b1817.chunk.js": "/my-site/static/js/3.b53b1817.chunk.js",
+    "static/js/3.b53b1817.chunk.js.map": "/my-site/static/js/3.b53b1817.chunk.js.map",
     "index.html": "/my-site/index.html",
     "static/css/2.a1596f27.chunk.css.map": "/my-site/static/css/2.a1596f27.chunk.css.map",
-    "static/css/main.062edffe.chunk.css.map": "/my-site/static/css/main.062edffe.chunk.css.map",
-    "static/js/2.4af8698a.chunk.js.LICENSE.txt": "/my-site/static/js/2.4af8698a.chunk.js.LICENSE.txt",
+    "static/css/main.8cdf1b96.chunk.css.map": "/my-site/static/css/main.8cdf1b96.chunk.css.map",
+    "static/js/2.9ccc09cc.chunk.js.LICENSE.txt": "/my-site/static/js/2.9ccc09cc.chunk.js.LICENSE.txt",
     "static/media/BackEnd.de6f4cd3.svg": "/my-site/static/media/BackEnd.de6f4cd3.svg",
     "static/media/FrontEnd.20eda6ba.svg": "/my-site/static/media/FrontEnd.20eda6ba.svg",
     "static/media/Profile.672f94bb.jpg": "/my-site/static/media/Profile.672f94bb.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.941b15db.js",
+    "static/js/runtime-main.9d96c4dc.js",
     "static/css/2.a1596f27.chunk.css",
-    "static/js/2.4af8698a.chunk.js",
-    "static/css/main.062edffe.chunk.css",
-    "static/js/main.4181600f.chunk.js"
+    "static/js/2.9ccc09cc.chunk.js",
+    "static/css/main.8cdf1b96.chunk.css",
+    "static/js/main.03d8b2e5.chunk.js"
   ]
 }
