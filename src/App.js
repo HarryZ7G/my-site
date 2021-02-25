@@ -5,10 +5,8 @@ import ProfileImg from './Components/ProfileImg/index.js';
 import RefreshMsg from './Components/RefreshMsg/index.js';
 import ScrollMsg from './Components/ScrollMsg/index.js';
 import Skills from './Components/Skills/index.js';
-import BackdropFilter from "react-backdrop-filter";
 import 'animate.css';
 import './App.css'
-import { isElement } from 'react-dom/cjs/react-dom-test-utils.development';
 
 class App extends React.Component {
 

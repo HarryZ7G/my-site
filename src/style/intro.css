@@ -9,10 +9,10 @@
 
 .imgCon {
   background-color: #FFFFFFAA;
-  height: 20vw;
-  width: 20vw;
-  border-radius: 20vw;
-  padding: 0.25vw;
+  height: min(20vw, 38vh);
+  width: min(20vw, 38vh);
+  border-radius: min(20vw, 40vh);
+  padding: min(0.25vw, 0.42vh);
   margin-top: 10vw;
 }
 
@@ -30,11 +30,11 @@
   display: flex;
   height: fit-content;
   /* width: fit-content; */
-  width: 18vw;
+  width: min(20vw, 27vh);
   text-align: end;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0;
-  font-size: 7vw;
+  font-size: min(7vw, 11vh);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   color: #FFFFFFAA;
@@ -44,38 +44,38 @@
   display: flex;
   height: fit-content;
   /* width: fit-content; */
-  width: 56vw;
+  width: min(60vw, 88vh);
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .section-text {
   margin: 0;
-  margin-top: 2.3vw;
+  margin-top: min(2.3vw, 3.7vh);
   display: flex;
   width: fit-content;
-  font-size: 2.1vw;
+  font-size: min(2.2vw, 3.3vh);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   color: #FFFFFFAA;
 }
 
 .v-line {
-  border-left: 0.3vw solid #FFFFFFAA;
+  border-left: min(0.3vw, 0.45vh) solid #FFFFFFAA;
   margin-top: 0.5vw;
   margin-left: 3vw;
   margin-right: 3vw;
-  height: 14.5vw;
+  height: min(14.5vw, 22vh);
 }
 
 .h-line {
   border: 0;
   border-top: 0.3vw solid #FFFFFFAA;
-  margin-top: 7vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  width: 13vw;
+  margin-top: min(7vw, 12vh);
+  margin-left: min(3vw, 4.5vh);
+  margin-right: min(3vw, 4.5vh);
+  width: min(13vw, 21vh);
   border-style: dashed;
 }
 
@@ -89,41 +89,106 @@
   margin-top: 1vw;
 }
 
-.circle {
-  /* background-color: #FFFFFFAA; */
+.circle1 {
   display: flex;
-  height: 12vw;
-  width: 12vw;
+  height: min(12vw, 18vh);
+  width: min(12vw, 18vh);
   border-style: solid;
-  border-radius: 20vw;
-  border-width: 0.3vw;
+  border-radius: min(20vw, 18vh);
+  border-width: min(0.3vw, 0.45vh);
   border-color: #FFFFFFAA;
   justify-content: center;
   align-items: center;
-  transition: 0.5s ease
+  cursor: pointer;
+  transition: background-color 0.3s
 }
 
-.circle:hover {
+.circle1:hover {
   background-color: #FFFFFF88;
 }
 
+.circle1:hover > .front-page{
+  visibility: visible;
+  opacity: 1;
+  cursor: default;
+}
+
+.circle2 {
+  display: flex;
+  height: min(12vw, 18vh);
+  width: min(12vw, 18vh);
+  border-style: solid;
+  border-radius: min(20vw, 18vh);
+  border-width: min(0.3vw, 0.45vh);
+  border-color: #FFFFFFAA;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s
+}
+
+.circle2:hover {
+  background-color: #FFFFFF88;
+}
+
+.circle2:hover > .back-page{
+  visibility: visible;
+  opacity: 1;
+  cursor: default;
+}
+
 .icon-front {
-  width: 10vw;
-  opacity: 66%;
+  width: min(10vw, 15vh);
+  opacity: 0.66;
 }
 
 .icon-back {
-  margin-top: 0.5vw;
-  width: 9vw;
-  opacity: 66%;
+  margin-top: min(0.5vw, 0.75vh);
+  width: min(9vw, 14vh);
+  opacity: 0.66;
 }
 
 .section-des {
-  margin-top: 1vw;
+  margin-top: min(1vw, 1.5vh);
   display: flex;
   width: fit-content;
-  font-size: 2.1vw;
+  font-size: min(2.1vw, 3.2vh);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   color: #FFFFFFAA;
+}
+
+.front-page {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  background-color: #00000088;
+  border-radius: 5px;
+  width: fit-content;
+  height: min(7vw, 10vh);
+  opacity: 0;
+  margin-top: min(-16vw, -24vh);
+  transition: visibility 0.3s, opacity 0.3s linear;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-page {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  background-color: #00000088;
+  border-radius: 5px;
+  width: fit-content;
+  height: min(7vw, 10vh);
+  opacity: 0;
+  margin-top: min(-16vw, -24vh);
+  transition: visibility 0.3s, opacity 0.3s linear;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-small {
+  margin: min(0.5vw, 1vh);
+  height: min(6vw, 8vh);
 }
