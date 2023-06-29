@@ -6,6 +6,7 @@ function App() {
   const [disable, setDisable] = React.useState(null);
   const [progress, setProgress] = React.useState(null);
   const [fill, setFill] = React.useState(null);
+  const [content, setContent] = React.useState(null);
   // const [background, setBackground] = React.useState(null);
   const [circles, setCircles] = React.useState(["", "", "", "", "", ""]);
 
@@ -35,7 +36,8 @@ function App() {
                 "tall-inset-shadow-appear",
                 "text-shadow",
               ]);
-            }, 5000);
+              setContent("display-content");
+            }, 3000);
           }}
         />
         <div className="progress-container">
@@ -53,11 +55,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div className={`thick-dash ${circles[1]}`} />
-        <div className={`thin-dash ${circles[2]}`} />
+        <div className={`thick-dash ${circles[1]}`}>
+          <div className={`thin-dash ${circles[2]}`} />
+        </div>
         <div className={`name-plate ${circles[3]}`}>
           <h1 className={`title ${circles[5]}`}>Hi, I'm Harry</h1>
         </div>
+      </div>
+      <div className={`content ${content}`}>
       </div>
     </div>
   );
