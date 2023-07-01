@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.e549602c.css",
-    "main.js": "/my-site/static/js/main.b85c6a1e.js",
+    "main.css": "/my-site/static/css/main.41234153.css",
+    "main.js": "/my-site/static/js/main.bf47d1a0.js",
     "static/js/787.a5fa54f9.chunk.js": "/my-site/static/js/787.a5fa54f9.chunk.js",
     "static/media/kghappy-webfont.woff": "/my-site/static/media/kghappy-webfont.4f03a6a5e483331956d2.woff",
     "static/media/kghappy-webfont.woff2": "/my-site/static/media/kghappy-webfont.320748991b496a77fe77.woff2",
     "static/media/bouncy-personal_use_only-webfont.woff": "/my-site/static/media/bouncy-personal_use_only-webfont.cfef4f632b9c99998425.woff",
     "static/media/bouncy-personal_use_only-webfont.woff2": "/my-site/static/media/bouncy-personal_use_only-webfont.1b904b54cd548d8f8712.woff2",
     "index.html": "/my-site/index.html",
-    "main.e549602c.css.map": "/my-site/static/css/main.e549602c.css.map",
-    "main.b85c6a1e.js.map": "/my-site/static/js/main.b85c6a1e.js.map",
+    "main.41234153.css.map": "/my-site/static/css/main.41234153.css.map",
+    "main.bf47d1a0.js.map": "/my-site/static/js/main.bf47d1a0.js.map",
     "787.a5fa54f9.chunk.js.map": "/my-site/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e549602c.css",
-    "static/js/main.b85c6a1e.js"
+    "static/css/main.41234153.css",
+    "static/js/main.bf47d1a0.js"
   ]
 }
