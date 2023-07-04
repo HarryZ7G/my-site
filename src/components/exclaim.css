@@ -1,0 +1,33 @@
+.exclaim {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+}
+
+.exclaim .left {
+  position: absolute;
+  height: 18px;
+  width: 4px;
+  border-radius: 5px;
+  background-color: var(--happy-colour);
+}
+
+.exclaim .middle {
+  position: absolute;
+  height: 25px;
+  width: 4px;
+  border-radius: 5px;
+  background-color: var(--happy-colour);
+  rotate: 20deg;
+  translate: 9px 3px;
+}
+
+.exclaim .right {
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  border-radius: 5px;
+  background-color: var(--happy-colour);
+  rotate: 40deg;
+  translate: 15.5px 7px;
+}

@@ -1,0 +1,92 @@
+.content {
+  display: none;
+  height: fit-content;
+  /* min-height: 150vh; */
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.display-content {
+  display: flex;
+}
+
+.content .portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  margin-top: calc(min(180px, 35vw, 40vh) * 0.8);
+  margin-bottom: calc(min(360px, 70vw, 40vh) * 0.8);
+}
+
+.content .portrait .top-big-bar {
+  position: absolute;
+  height: calc(min(360px, 70vw, 40vh / 3));
+  translate: calc(min(360px, 70vw, 40vh) * 0.8)
+    calc(min(360px, 70vw, 40vh) * -0.4);
+  aspect-ratio: 5 / 1;
+  border-radius: 150px;
+  background-color: var(--background-colour);
+  rotate: 30deg;
+  box-shadow: 4px 2px 8px var(--shadow-color);
+}
+
+.content .portrait .top-big-bar .top-small-bar {
+  position: absolute;
+  left: -20%;
+  bottom: -35%;
+  /* height: min(60px, 10vw); */
+  width: 60%;
+  aspect-ratio: 6 / 1;
+  border-radius: 150px;
+  background-image: var(--dots-two-image);
+  background-size: var(--dots-two-size);
+  box-shadow: 4px 2px 8px var(--shadow-color);
+}
+
+.content .portrait .frame {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  width: min(360px, 70vw, 40vh);
+  border-radius: 200px;
+  background: var(--diagonal-background);
+  box-shadow: 6px 6px 16px var(--shadow-color);
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .portrait .frame img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 100%;
+  filter: saturate(0.8)
+  /* filter: saturate(0.8) drop-shadow(0px 0px 16px var(--shadow-color)); */
+}
+
+.content .portrait .bottom-big-bar {
+  position: absolute;
+  height: calc(min(360px, 70vw, 40vh / 3));
+  translate: calc(min(360px, 70vw, 40vh) * -0.8)
+    calc(min(360px, 70vw, 40vh) * 0.4);
+  aspect-ratio: 5 / 1;
+  border-radius: 150px;
+  background-image: var(--dots-two-image);
+  background-size: var(--dots-two-size);
+  rotate: 30deg;
+  box-shadow: 4px 2px 8px var(--shadow-color);
+}
+
+.content .portrait .bottom-big-bar .bottom-small-bar {
+  position: absolute;
+  right: -20%;
+  top: -35%;
+  width: 60%;
+  aspect-ratio: 6 / 1;
+  border-radius: 150px;
+  background-color: var(--background-colour);
+  box-shadow: 4px 2px 8px var(--shadow-color);
+}

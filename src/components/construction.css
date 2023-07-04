@@ -1,0 +1,40 @@
+.construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 8px var(--shadow-color);
+  background-color: var(--background-colour);
+  border-radius: 10px;
+  height: calc(min(54px, 10vw) * 5.5);
+  width: calc(min(54px, 10vw) * 9);
+  overflow: hidden;
+  margin-bottom: min(81px, 15vw);
+}
+
+.construction .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--construction-background);
+  height: 40%;
+  width: 100%;
+}
+
+.construction .top h2 {
+  font-weight: bold;
+  color: var(--background-colour);
+}
+
+.construction .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+}
+
+.construction .bottom h2 {
+  font-weight: bold;
+  color: var(--construction-colour);
+}
