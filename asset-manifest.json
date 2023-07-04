@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.44c8261e.css",
+    "main.css": "/my-site/static/css/main.6ee4c92e.css",
     "main.js": "/my-site/static/js/main.18fbc4e0.js",
     "static/js/787.a5fa54f9.chunk.js": "/my-site/static/js/787.a5fa54f9.chunk.js",
     "static/media/Portrait Colour.jpeg": "/my-site/static/media/Portrait Colour.2f540d0825897b88b2f3.jpeg",
@@ -9,12 +9,12 @@
     "static/media/bouncy-personal_use_only-webfont.woff": "/my-site/static/media/bouncy-personal_use_only-webfont.cfef4f632b9c99998425.woff",
     "static/media/bouncy-personal_use_only-webfont.woff2": "/my-site/static/media/bouncy-personal_use_only-webfont.1b904b54cd548d8f8712.woff2",
     "index.html": "/my-site/index.html",
-    "main.44c8261e.css.map": "/my-site/static/css/main.44c8261e.css.map",
+    "main.6ee4c92e.css.map": "/my-site/static/css/main.6ee4c92e.css.map",
     "main.18fbc4e0.js.map": "/my-site/static/js/main.18fbc4e0.js.map",
     "787.a5fa54f9.chunk.js.map": "/my-site/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44c8261e.css",
+    "static/css/main.6ee4c92e.css",
     "static/js/main.18fbc4e0.js"
   ]
 }
