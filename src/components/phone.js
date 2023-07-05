@@ -96,7 +96,7 @@ function iPhone() {
             </div>
           </div>
           <text className="title">{`IT Director\n`}</text>
-          <text className="duration">Septemper 2022 - May 2023</text>
+          <text className="duration">September 2022 - May 2023</text>
         </div>
         <div className="event">
           <div className="image-wrapper">
