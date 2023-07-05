@@ -60,27 +60,6 @@ function Badge() {
           <img src={Linux} alt={Linux} />
           <img src={Oracle} alt={Oracle} />
         </div>
-        {/* <text>
-          o Worked in the InfoSphere Data Replication Team to implement a
-          computing solution using Java, ensuring near real-time delivery of
-          transactional data between multiple data stores.
-        </text>
-        <text>
-          o Developed solutions for the rapid transition from Log4j after
-          discovering the vulnerability.
-        </text>
-        <text>
-          o Created test cases in conjunction with remote diagnosis in which
-          discovered a day-one bug.
-        </text>
-        <text>
-          o Integrated database resiliency functionality, reducing client data
-          replication time by 50%.
-        </text>
-        <text>
-          o Diagnosed and provided solutions for commercial users via Salesforce
-          with 100% resolve rate.
-        </text> */}
       </div>
     </div>
   );

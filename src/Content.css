@@ -31,7 +31,7 @@
   border-radius: 150px;
   background-color: var(--background-colour);
   rotate: 30deg;
-  box-shadow: 4px 2px 8px var(--shadow-color);
+  box-shadow: 4px 2px 8px var(--shadow-colour);
 }
 
 .content .portrait .top-big-bar .top-small-bar {
@@ -44,7 +44,7 @@
   border-radius: 150px;
   background-image: var(--dots-two-image);
   background-size: var(--dots-two-size);
-  box-shadow: 4px 2px 8px var(--shadow-color);
+  box-shadow: 4px 2px 8px var(--shadow-colour);
 }
 
 .content .portrait .frame {
@@ -53,7 +53,7 @@
   width: min(360px, 70vw, 40vh);
   border-radius: 200px;
   background: var(--diagonal-background);
-  box-shadow: 6px 6px 16px var(--shadow-color);
+  box-shadow: 6px 6px 16px var(--shadow-colour);
   z-index: 5;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,7 @@
   width: 100%;
   border-radius: 100%;
   filter: saturate(0.8)
-  /* filter: saturate(0.8) drop-shadow(0px 0px 16px var(--shadow-color)); */
+  /* filter: saturate(0.8) drop-shadow(0px 0px 16px var(--shadow-colour)); */
 }
 
 .content .portrait .bottom-big-bar {
@@ -77,7 +77,7 @@
   background-image: var(--dots-two-image);
   background-size: var(--dots-two-size);
   rotate: 30deg;
-  box-shadow: 4px 2px 8px var(--shadow-color);
+  box-shadow: 4px 2px 8px var(--shadow-colour);
 }
 
 .content .portrait .bottom-big-bar .bottom-small-bar {
@@ -88,5 +88,5 @@
   aspect-ratio: 6 / 1;
   border-radius: 150px;
   background-color: var(--background-colour);
-  box-shadow: 4px 2px 8px var(--shadow-color);
+  box-shadow: 4px 2px 8px var(--shadow-colour);
 }

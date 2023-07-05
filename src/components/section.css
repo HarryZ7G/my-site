@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   background: var(--diagonal-background);
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
   border-radius: 200px;
   z-index: 5;
   height: calc(min(27px, 5vw) * 3.5);
@@ -30,7 +30,7 @@
   border-radius: 70px;
   background-image: var(--dots-two-image);
   background-size: var(--dots-two-size);
-  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  box-shadow: inset 3px 3px 8px var(--shadow-colour);
 }
 
 .section .plate-cutout .hinge {
@@ -38,7 +38,7 @@
   background-color: var(--background-colour);
   height: 60%;
   border-radius: 60%;
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
 }
 
 .section-wrapper .arm {
@@ -47,7 +47,7 @@
   background-color: var(--background-colour);
   height: min(54px, 10vw);
   border-radius: 60px;
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
   translate: calc(min(27px, 5vw) * 0.525 + max(-54px, -10vw) * 5) calc(max(-27px, -5vw) * 3.5 / 2 - 50%);
   rotate: 30deg;
   transform-origin: calc(min(54px, 10vw) * 5.5) min(27px, 5vw);
@@ -64,7 +64,7 @@
   border-radius: 120px;
   background-image: var(--dots-two-image);
   background-size: var(--dots-two-size);
-  box-shadow: 2px 2px 4px var(--shadow-color);
+  box-shadow: 2px 2px 4px var(--shadow-colour);
   translate: calc(max(-81px, -15vw) * 0.15 + max(-54px, -10vw) * 2.5 * 1.732) calc(max(-54px, -10vw) - min(27px, 5vw) * 3.5 / 2 - min(54px, 10vw) * 2.5);
   z-index: 2;
 }

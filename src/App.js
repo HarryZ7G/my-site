@@ -5,6 +5,7 @@ import Landing from "./components/landing.js";
 import Section from "./components/section.js";
 import Portrait from "./media/Portrait Colour.jpeg";
 import Badge from "./components/badge.js";
+import Phone from "./components/phone.js";
 import Construction from "./components/construction.js";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         </div>
         <Section name="Experience"/>
         <Badge />
+        <Phone />
         <Construction />
       </div>
     </div>

@@ -12,7 +12,7 @@
   width: min(90vw, 500px);
   border-radius: calc(min(90vw, 500px) * 0.03);
   background-color: var(--badge-colour);
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
   rotate: -5deg;
   transition: 0.7s ease;
   transition-property: transform box-shadow;
@@ -20,6 +20,10 @@
   backface-visibility: hidden;
   overflow: hidden;
   cursor: pointer;
+}
+
+.badge:hover {
+  box-shadow: 6px 6px 16px var(--shadow-colour);
 }
 
 .badge-back {
@@ -31,7 +35,7 @@
   width: min(90vw, 500px);
   border-radius: calc(min(90vw, 500px) * 0.03);
   background-color: var(--badge-colour);
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
   transform: rotateY(180deg);
   rotate: -5deg;
   transition: 0.7s ease;
@@ -44,14 +48,18 @@
   cursor: pointer;
 }
 
+.badge-back:hover {
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+}
+
 .badge-flip {
   transform: rotateY(180deg) rotate(-5deg);
-  /* box-shadow: 6px 6px 24px var(--shadow-color); */
+  /* box-shadow: 6px 6px 24px var(--shadow-colour); */
 }
 
 .badge-backflip {
   transform: rotateY(0deg) rotate(5deg);
-  /* box-shadow: 6px 6px 24px var(--shadow-color); */
+  /* box-shadow: 6px 6px 24px var(--shadow-colour); */
 }
 
 .badge .cutout {
@@ -61,7 +69,7 @@
   margin-left: 3%;
   margin-right: 4%;
   background-color: var(--background-colour);
-  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  box-shadow: inset 3px 3px 8px var(--shadow-colour);
   border-radius: 100px;
   z-index: 2;
 }
@@ -127,7 +135,7 @@
   right: 3%;
   top: 43.5%;
   background-color: var(--background-colour);
-  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  box-shadow: inset 3px 3px 8px var(--shadow-colour);
   border-radius: 100px;
   z-index: 2;
 }

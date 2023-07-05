@@ -60,18 +60,18 @@
     background-color: var(--background-colour);
   }
   10% {
-    box-shadow: 0px 0px 0px var(--shadow-color),
-      inset 3px 3px 6px var(--shadow-color);
+    box-shadow: 0px 0px 0px var(--shadow-colour),
+      inset 3px 3px 6px var(--shadow-colour);
   }
   99% {
     visibility: visible;
-    box-shadow: 0px 0px 0px var(--shadow-color),
-      inset 3px 3px 6px var(--shadow-color);
+    box-shadow: 0px 0px 0px var(--shadow-colour),
+      inset 3px 3px 6px var(--shadow-colour);
   }
   100% {
     visibility: hidden;
-    box-shadow: 0px 0px 0px var(--shadow-color),
-      inset 3px 3px 6px var(--shadow-color);
+    box-shadow: 0px 0px 0px var(--shadow-colour),
+      inset 3px 3px 6px var(--shadow-colour);
   }
 }
 
@@ -93,22 +93,22 @@
 }
 
 .landing .animate-circle {
-  box-shadow: 4px 4px 10px var(--shadow-color),
-    inset 0px 0px 0px var(--shadow-color);
-  /* box-shadow: 0 0 40px var(--shadow-color); */
+  box-shadow: 4px 4px 10px var(--shadow-colour),
+    inset 0px 0px 0px var(--shadow-colour);
+  /* box-shadow: 0 0 40px var(--shadow-colour); */
 }
 
 .landing .circle:active {
-  box-shadow: 0px 0px 0px var(--shadow-color),
-    inset 3px 3px 6px var(--shadow-color);
+  box-shadow: 0px 0px 0px var(--shadow-colour),
+    inset 3px 3px 6px var(--shadow-colour);
   background-color: var(--background-colour);
   transition: box-shadow 0.1s ease;
   -webkit-transition: box-shadow 0.1s ease;
 }
 
 .landing .disabled {
-  box-shadow: 0px 0px 0px var(--shadow-color),
-    inset 3px 3px 6px var(--shadow-color);
+  box-shadow: 0px 0px 0px var(--shadow-colour),
+    inset 3px 3px 6px var(--shadow-colour);
   transition: box-shadow 0.1s ease;
   -webkit-transition: box-shadow 0.1s ease;
   pointer-events: none;
@@ -386,22 +386,22 @@
 
 .landing .shadow-appear {
   opacity: 1;
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
 }
 
 .landing .tall-shadow-appear {
   opacity: 1;
-  box-shadow: 6px 6px 16px var(--shadow-color);
+  box-shadow: 6px 6px 16px var(--shadow-colour);
 }
 
 .landing .inset-shadow-appear {
   opacity: 1;
-  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  box-shadow: inset 3px 3px 8px var(--shadow-colour);
 }
 
 .landing .tall-inset-shadow-appear {
   opacity: 1;
-  box-shadow: inset 6px 6px 16px var(--shadow-color);
+  box-shadow: inset 6px 6px 16px var(--shadow-colour);
 }
 
 .landing .text-shadow {

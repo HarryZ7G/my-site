@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 3px 3px 8px var(--shadow-color);
+  box-shadow: 3px 3px 8px var(--shadow-colour);
   background-color: var(--background-colour);
   border-radius: 10px;
   height: calc(min(54px, 10vw) * 5.5);

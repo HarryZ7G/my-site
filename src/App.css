@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-colour: #fff;
-    --shadow-color: #3334;
+    --shadow-colour: #3334;
     --dots-one-image: radial-gradient(
       #555 0.8px,
       var(--background-colour) 0.8px
@@ -55,13 +55,18 @@
       var(--construction-colour) 1px,
       var(--construction-colour) 10px
     );
+    --appstore-background: #fff;
+    --appstore-thin-colour: #777;
+    --appstore-medium-colour: #666;
+    --appstore-line-colour: #ddd;
+    --appstore-event-colour: #fff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-colour: #353535;
-    --shadow-color: #000c;
+    --shadow-colour: #000c;
     --dots-one-image: radial-gradient(
       #aaa 0.8px,
       var(--background-colour) 0.8px
@@ -115,6 +120,11 @@
       var(--construction-colour) 1px,
       var(--construction-colour) 10px
     );
+    --appstore-background: #111;
+    --appstore-thin-colour: #888;
+    --appstore-medium-colour: #999;
+    --appstore-line-colour: #333;
+    --appstore-event-colour: #222;
   }
 }
 
