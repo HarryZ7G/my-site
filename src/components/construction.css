@@ -8,6 +8,7 @@
   height: calc(min(54px, 10vw) * 5.5);
   width: calc(min(54px, 10vw) * 9);
   overflow: hidden;
+  margin-top: calc(min(81px, 15vw) * 2);
   margin-bottom: min(81px, 15vw);
 }
 

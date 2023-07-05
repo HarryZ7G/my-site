@@ -46,6 +46,7 @@
     --push-shadow: #fffd;
     --push-background: #bbb;
     --outline-colour: #aaa;
+    --badge-colour: #fff;
     --construction-colour: #333;
     --construction-background: repeating-linear-gradient(
       45deg,
@@ -105,6 +106,7 @@
     --push-shadow: #353535d0;
     --push-background: #000;
     --outline-colour: #aaa;
+    --badge-colour: #ddd;
     --construction-colour: #fff;
     --construction-background: repeating-linear-gradient(
       45deg,

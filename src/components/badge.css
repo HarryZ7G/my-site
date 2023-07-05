@@ -1,0 +1,165 @@
+.laminate {
+  position: relative;
+  aspect-ratio: 21 / 13;
+  width: min(90vw, 500px);
+}
+
+.badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 21 / 13;
+  width: min(90vw, 500px);
+  border-radius: calc(min(90vw, 500px) * 0.03);
+  background-color: var(--badge-colour);
+  box-shadow: 3px 3px 8px var(--shadow-color);
+  rotate: -5deg;
+  transition: 0.7s ease;
+  transition-property: transform box-shadow;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.badge-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  aspect-ratio: 21 / 13;
+  width: min(90vw, 500px);
+  border-radius: calc(min(90vw, 500px) * 0.03);
+  background-color: var(--badge-colour);
+  box-shadow: 3px 3px 8px var(--shadow-color);
+  transform: rotateY(180deg);
+  rotate: -5deg;
+  transition: 0.7s ease;
+  transition-property: transform box-shadow;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-size: calc(min(9vw, 50px) * 0.42);
+  color: #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.badge-flip {
+  transform: rotateY(180deg) rotate(-5deg);
+  /* box-shadow: 6px 6px 24px var(--shadow-color); */
+}
+
+.badge-backflip {
+  transform: rotateY(0deg) rotate(5deg);
+  /* box-shadow: 6px 6px 24px var(--shadow-color); */
+}
+
+.badge .cutout {
+  /* position: absolute; */
+  aspect-ratio: 1 / 4;
+  height: 15%;
+  margin-left: 3%;
+  margin-right: 4%;
+  background-color: var(--background-colour);
+  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.badge .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  /* color: var(--font-colour); */
+  color: #000;
+  z-index: 2;
+}
+
+.badge .description .company {
+  font-size: calc(min(9vw, 50px) * 0.9);
+  font-weight: 200;
+}
+
+.badge .description .detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge .description .detail .title {
+  font-size: calc(min(9vw, 50px) * 0.75);
+  font-weight: bold;
+}
+
+.badge .description .detail .duration {
+  font-size: calc(min(9vw, 50px) * 0.42);
+  margin-top: calc(min(9vw, 50px) * -0.1);
+}
+
+.badge .duckroll {
+  position: absolute;
+  align-self: flex-start;
+  height: 27%;
+  margin-top: 4%;
+  margin-left: 79%;
+  z-index: 2;
+}
+
+.badge .duckroll-fill {
+  /* fill: var(--font-colour); */
+  fill: #000;
+}
+
+.badge .ibm {
+  margin-left: 2.5%;
+  position: absolute;
+  width: 95%;
+  rotate: 10deg;
+  z-index: 1;
+  opacity: 0.2;
+  /* filter: saturate(0.1) brightness(2.3); */
+}
+
+.badge-back .cutout {
+  position: absolute;
+  aspect-ratio: 1 / 4;
+  height: 15%;
+  right: 3%;
+  top: 43.5%;
+  background-color: var(--background-colour);
+  box-shadow: inset 3px 3px 8px var(--shadow-color);
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.badge-back .strip {
+  height: 20%;
+  width: 100%;
+  background-color: #000;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.badge-back .division {
+  margin-left: 5%;
+  font-size: calc(min(9vw, 50px) * 0.6);
+  font-weight: bold;
+}
+
+.badge-back .team {
+  margin-left: 5%;
+  font-size: calc(min(9vw, 50px) * 0.6);
+}
+
+.badge-back .icons {
+  display: flex;
+  align-items: center;
+}
+
+.badge-back .icons img {
+  /* background-color: white; */
+  max-height: calc(min(9vw, 50px));
+  max-width: calc(min(9vw, 50px) * 1.8);
+  margin-top: 5%;
+  margin-left: 5%;
+}

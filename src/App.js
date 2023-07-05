@@ -1,10 +1,11 @@
 import React from "react";
-import Landing from "./components/landing.js";
-import Section from "./components/section.js";
-import Construction from "./components/construction.js";
-import Portrait from "./media/Portrait Colour.jpeg";
 import "./App.css";
 import "./Content.css";
+import Landing from "./components/landing.js";
+import Section from "./components/section.js";
+import Portrait from "./media/Portrait Colour.jpeg";
+import Badge from "./components/badge.js";
+import Construction from "./components/construction.js";
 
 function App() {
   const [content, setContent] = React.useState(null);
@@ -24,7 +25,8 @@ function App() {
             <div className="bottom-small-bar" />
           </div>
         </div>
-        <Section name="experience"/>
+        <Section name="Experience"/>
+        <Badge />
         <Construction />
       </div>
     </div>
