@@ -1,6 +1,7 @@
 .phone {
   aspect-ratio: 71.5 / 147.5;
   margin-top: min(81px, 15vw);
+  margin-bottom: min(108px, 20vw);
   width: calc(min(400px, 80vw) * 0.95);
   rotate: -5deg;
   border-radius: calc(min(400px, 80vw) * 0.15);
@@ -153,6 +154,11 @@
   margin-top: calc(min(20px, 4vw) * 2.2);
 }
 
+.phone .rating .ratings .unit {
+  position: absolute;
+  margin-top: calc(min(20px, 4vw) * 2.1);
+}
+
 .phone .rating .ratings .star {
   fill: var(--appstore-medium-colour);
 }
@@ -181,7 +187,8 @@
 
 .phone .ea .ea-wrapper {
   color: var(--font-colour);
-  line-height: calc(min(20px, 4vw) * 1.1);
+  margin-top: calc(min(20px, 4vw) * 0.3);
+  line-height: calc(min(20px, 4vw) * 0.6);
   font-size: calc(min(20px, 4vw) * 1);
   font-weight: 600;
 }
@@ -190,7 +197,7 @@
   color: #3478f6;
   line-height: calc(min(20px, 4vw) * 1.3);
   font-size: calc(min(20px, 4vw) * 0.7);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .phone .ea .event {

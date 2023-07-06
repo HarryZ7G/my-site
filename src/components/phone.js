@@ -60,7 +60,7 @@ function iPhone() {
             <div className="value-wrapper">
               <text className="value">8</text>
             </div>
-            <div className="stars">
+            <div className="unit">
               <text>years</text>
             </div>
           </div>
@@ -72,7 +72,7 @@ function iPhone() {
             <div className="value-wrapper">
               <text className="value">6</text>
             </div>
-            <div className="stars">
+            <div className="unit">
               <text>consultations</text>
             </div>
           </div>

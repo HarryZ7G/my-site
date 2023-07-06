@@ -1,0 +1,78 @@
+.envelope {
+  display: flex;
+  flex-direction: column;
+  width: min(1000px, 160vw);
+  aspect-ratio: 9.5 / 4;
+  box-shadow: 3px 3px 8px var(--shadow-colour);
+  background-color: var(--badge-colour);
+  rotate: -5deg;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 625px) {
+  .envelope {
+    translate: calc((1100px - 100vw) / 2) 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .envelope {
+    translate: 37.5vw 0;
+  }
+}
+
+.envelope .outside {
+  margin-top: calc(min(100px, 16vw) * 0.3);
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+}
+
+.envelope .outside .emblem {
+  object-fit: cover;
+  width: calc(min(100px, 16vw) * 1.5);
+  opacity: 0.9;
+}
+
+.envelope .outside .text-wrapper {
+  margin-left: 2%;
+  white-space: pre-line;
+  color: #888;
+  font-size: calc(min(25px, 4vw) * 0.8);
+}
+
+.envelope .outside .text-wrapper .title {
+  font-weight: bold;
+}
+
+.envelope .outside .text-wrapper .subtitle {
+  font-weight: 200;
+}
+
+.envelope .window .text-wrapper {
+  margin-top: calc(min(100px, 16vw) * 0.15);
+  margin-left: 5%;
+  white-space: pre-line;
+  color: #000;
+  font-size: calc(min(25px, 4vw) * 0.8);
+}
+
+.envelope .window .text-wrapper .title {
+  font-weight: bold;
+}
+
+.envelope .window .text-wrapper .subtitle {
+  font-weight: 200;
+}
+
+.envelope .window {
+  aspect-ratio: 4 / 1;
+  width: 60%;
+  margin-top: calc(min(100px, 16vw) * 0.35);
+  border-radius: calc(min(100px, 16vw) * 0.15);
+  border-color: var(--envelope-window-colour);
+  border-style: solid;
+  border-width: calc(min(100px, 16vw) * 0.01);
+  margin-left: 6%;
+  background-image: var(--envelope-pattern);
+  background-size: var(--envelope-pattern-size);
+}

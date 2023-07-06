@@ -60,6 +60,9 @@
     --appstore-medium-colour: #666;
     --appstore-line-colour: #ddd;
     --appstore-event-colour: #fff;
+    --envelope-window-colour: #eee;
+    --envelope-pattern: radial-gradient(circle at top,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #eee 10% ,#eee 15% , transparent 16%);
+    --envelope-pattern-size: 15px 15px;
   }
 }
 
@@ -111,7 +114,7 @@
     --push-shadow: #353535d0;
     --push-background: #000;
     --outline-colour: #aaa;
-    --badge-colour: #ddd;
+    --badge-colour: #eee;
     --construction-colour: #fff;
     --construction-background: repeating-linear-gradient(
       45deg,
@@ -125,6 +128,9 @@
     --appstore-medium-colour: #999;
     --appstore-line-colour: #333;
     --appstore-event-colour: #222;
+    --envelope-window-colour: #ddd;
+    --envelope-pattern: radial-gradient(circle at top,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%);
+    --envelope-pattern-size: 15px 15px;
   }
 }
 

@@ -6,6 +6,7 @@ import Section from "./components/section.js";
 import Portrait from "./media/Portrait Colour.jpeg";
 import Badge from "./components/badge.js";
 import Phone from "./components/phone.js";
+import Envelope from "./components/envelope";
 import Construction from "./components/construction.js";
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         <Section name="Experience"/>
         <Badge />
         <Phone />
+        <Section name="Education" />
+        <Envelope />
         <Construction />
       </div>
     </div>
