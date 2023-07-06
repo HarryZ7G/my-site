@@ -1,7 +1,7 @@
 import React from "react";
 import "./phone.css";
 import MCG from "../media/MCG.png";
-import Star from "./star";
+// import Star from "./star";
 import ConsultingDay from "../media/ConsultingDay.jpg";
 import CaseComp from "../media/CaseComp.jpg";
 
@@ -44,13 +44,20 @@ function iPhone() {
             <div className="value-wrapper">
               <text className="value">4.0</text>
             </div>
-            <div className="stars">
+            <div className="circles">
+              <div className="circle" />
+              <div className="circle" />
+              <div className="circle" />
+              <div className="circle" />
+              <div className="empty-circle" />
+            </div>
+            {/* <div className="stars">
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="none" />
-            </div>
+            </div> */}
           </div>
           <div className="divide" />
           <div className="area">

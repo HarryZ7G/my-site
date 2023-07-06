@@ -2,6 +2,11 @@
   position: relative;
   aspect-ratio: 21 / 13;
   width: min(90vw, 500px);
+  transition: translate 0.5s ease;
+}
+
+.laminate:hover {
+  translate: 0px -5%;
 }
 
 .badge {

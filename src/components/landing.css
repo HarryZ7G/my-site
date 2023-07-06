@@ -326,7 +326,7 @@
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1;
-  height: min(130px, 30vw);
+  height: min(130px, 30vw, 24vh);
   border-radius: 150px;
   transition-delay: 0.9s;
   transition-property: opacity;

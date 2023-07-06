@@ -1,7 +1,8 @@
 .phone {
-  aspect-ratio: 71.5 / 147.5;
+  /* aspect-ratio: 71.5 / 147.5; */
   margin-top: min(81px, 15vw);
   margin-bottom: min(108px, 20vw);
+  height: calc(min(400px, 80vw) * 1.96);
   width: calc(min(400px, 80vw) * 0.95);
   rotate: -5deg;
   border-radius: calc(min(400px, 80vw) * 0.15);
@@ -122,6 +123,11 @@
   margin-left: 2%;
 }
 
+.phone .rating .ratings text {
+  color: var(--appstore-thin-colour);
+  font-size: calc(min(20px, 4vw) * 0.6);
+}
+
 .phone .rating .ratings .area {
   margin-top: calc(min(20px, 4vw) * 0.2);
   height: 100%;
@@ -134,11 +140,6 @@
   line-height: calc(min(20px, 4vw) * 0.6);
   overflow: hidden;
   white-space: nowrap;
-}
-
-.phone .rating .ratings text {
-  color: var(--appstore-thin-colour);
-  font-size: calc(min(20px, 4vw) * 0.6);
 }
 
 .phone .rating .ratings .value-wrapper {
@@ -157,9 +158,33 @@
   margin-top: calc(min(20px, 4vw) * 2.2);
 }
 
+.phone .rating .ratings .circles {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: calc(min(20px, 4vw) * 2.6);
+  width: calc(min(20px, 4vw) * 2.6);
+}
+
+.phone .rating .ratings .circle {
+  height: calc(min(20px, 4vw) * 0.3);
+  width: calc(min(20px, 4vw) * 0.3);
+  border-radius: 20px;
+  background-color: var(--appstore-medium-colour);
+}
+
+.phone .rating .ratings .empty-circle {
+  height: calc(min(20px, 4vw) * 0.3);
+  width: calc(min(20px, 4vw) * 0.3);
+  border-radius: 20px;
+  background-color: var(--appstore-line-colour);
+}
+
 .phone .rating .ratings .unit {
   position: absolute;
-  margin-top: calc(min(20px, 4vw) * 2.1);
+  margin-top: calc(min(20px, 4vw) * 2.2);
+  line-height: calc(min(20px, 4vw) * 0.6);
 }
 
 .phone .rating .ratings .star {
