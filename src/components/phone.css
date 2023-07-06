@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .phone .notch {
@@ -131,6 +132,8 @@
 
 .phone .rating .ratings .practice {
   line-height: calc(min(20px, 4vw) * 0.6);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .phone .rating .ratings text {
