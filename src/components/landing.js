@@ -16,6 +16,7 @@ function Landing(props) {
   const [bass, setBass] = React.useState(null);
   const [hello, setHello] = React.useState(null);
   const [circles, setCircles] = React.useState(["", "", "", "", "", ""]);
+  const [scroll, setScroll] = React.useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,7 +26,7 @@ function Landing(props) {
   }, []);
 
   return (
-    <div className={`landing ${circles[0]}`}>
+    <div className={`landing ${scroll} ${circles[0]}`}>
       <div className={`cover ${cover}`} />
       <div className={`wave ${wave}`} />
       <div
@@ -53,6 +54,13 @@ function Landing(props) {
             setBass("bass-animate");
             setHello("hello-animate");
             props.content("display-content");
+            let remind = setInterval(() => {
+              if (window.scrollY !== 0) {
+                setScroll(null);
+                clearInterval(remind);
+              }
+            }, 5000);
+            setScroll("scroll-remind");
           }, 1900);
         }}
       >

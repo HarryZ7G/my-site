@@ -8,6 +8,23 @@
   justify-content: center;
   overflow: hidden;
   opacity: 1;
+  transition: translate 1s ease;
+}
+
+@keyframes scroll-bump {
+  70% {
+    translate: 0 0%;
+  }
+  85% {
+    translate: 0 -5%;
+  }
+  100% {
+    translate: 0 0%;
+  }
+}
+
+.scroll-remind {
+  animation: scroll-bump 5s ease infinite;
 }
 
 .landing .cover {
