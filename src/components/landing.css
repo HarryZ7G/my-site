@@ -12,19 +12,19 @@
 }
 
 @keyframes scroll-bump {
-  70% {
+  0% {
     translate: 0 0%;
   }
-  85% {
+  12.5% {
     translate: 0 -5%;
   }
-  100% {
+  25% {
     translate: 0 0%;
   }
 }
 
 .scroll-remind {
-  animation: scroll-bump 5s ease infinite;
+  animation: scroll-bump 6s ease infinite;
 }
 
 .landing .cover {

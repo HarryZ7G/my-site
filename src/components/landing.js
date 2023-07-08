@@ -54,14 +54,16 @@ function Landing(props) {
             setBass("bass-animate");
             setHello("hello-animate");
             props.content("display-content");
-            let remind = setInterval(() => {
-              if (window.scrollY !== 0) {
-                setScroll(null);
-                clearInterval(remind);
-              }
-            }, 5000);
-            setScroll("scroll-remind");
           }, 1900);
+          setTimeout(() => {
+            setScroll("scroll-remind");
+          }, 6000);
+          let remind = setInterval(() => {
+            if (window.scrollY !== 0) {
+              setScroll(null);
+              clearInterval(remind);
+            }
+          }, 1500);
         }}
       >
         <text className={`push ${push}`}>Push</text>
