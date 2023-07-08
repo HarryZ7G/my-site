@@ -89,7 +89,7 @@ function iPhone() {
       </div>
       <div className="ea">
         <div className="ea-wrapper">
-          <text>Event and Positions</text>
+          <text>Events and Positions</text>
         </div>
         <text className="ea-time">Since July 2021</text>
         <div className="event">
