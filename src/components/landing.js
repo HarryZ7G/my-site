@@ -55,13 +55,14 @@ function Landing(props) {
             setHello("hello-animate");
             props.content("display-content");
           }, 1900);
-          setTimeout(() => {
+          let timeOut = setTimeout(() => {
             setScroll("scroll-remind");
           }, 6000);
           let remind = setInterval(() => {
             if (window.scrollY !== 0) {
               setScroll(null);
               clearInterval(remind);
+              clearTimeout(timeOut);
             }
           }, 1500);
         }}
