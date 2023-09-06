@@ -24,7 +24,7 @@
 
 .content .portrait .top-big-bar {
   position: absolute;
-  height: calc(min(360px, 70vw, 40vh / 3));
+  height: calc(min(150px, 30vw, 40vh / 3));
   translate: calc(min(360px, 70vw, 40vh) * 0.8)
     calc(min(360px, 70vw, 40vh) * -0.4);
   aspect-ratio: 5 / 1;
@@ -69,7 +69,7 @@
 
 .content .portrait .bottom-big-bar {
   position: absolute;
-  height: calc(min(360px, 70vw, 40vh / 3));
+  height: calc(min(150px, 30vw, 40vh / 3));
   translate: calc(min(360px, 70vw, 40vh) * -0.8)
     calc(min(360px, 70vw, 40vh) * 0.4);
   aspect-ratio: 5 / 1;
@@ -89,4 +89,26 @@
   border-radius: 150px;
   background-color: var(--background-colour);
   box-shadow: 4px 2px 8px var(--shadow-colour);
+}
+
+.content .items-grid {
+  display: flex;
+}
+
+@media screen and (min-width:1200px) {
+  .content .items-grid {
+    flex-direction: row;
+    width: 1050px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .content .items-grid {
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
 }

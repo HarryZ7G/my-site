@@ -27,9 +27,11 @@ function App() {
             <div className="bottom-small-bar" />
           </div>
         </div>
-        <Section name="Experience"/>
-        <Badge />
-        <Phone />
+        <Section name="Experience" />
+        <div className="items-grid">
+          <Badge />
+          <Phone />
+        </div>
         <Section name="Education" />
         <Envelope />
         <Construction />

@@ -1,6 +1,5 @@
 .phone {
   /* aspect-ratio: 71.5 / 147.5; */
-  margin-top: min(81px, 15vw);
   margin-bottom: min(108px, 20vw);
   height: calc(min(400px, 80vw) * 1.96);
   width: calc(min(400px, 80vw) * 0.95);
