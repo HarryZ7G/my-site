@@ -56,7 +56,7 @@
   width: calc(min(54px, 10vw) * 7.5);
   box-shadow: 3px 3px 8px var(--shadow-colour);
   border-radius: 450px;
-  margin-top: 150px;
+  margin-top: min(108px, 20vw);
   cursor: pointer;
   transition: box-shadow 0.5s;
   border-color: #0000;
@@ -94,12 +94,15 @@
 }
 
 .nutrition .nutrition-content {
+  position: absolute;
+  width: calc(min(54px, 10vw) * 8.8);
   visibility: hidden;
   opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: min(54px, 10vw);
+  /* margin-top: min(54px, 10vw); */
+  margin: min(54px, 10vw) 0 0 0;
 }
 
 .nutrition .animate-nutrition-content {
@@ -168,7 +171,6 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   color: #000;
-  margin-left: min(5.4px, 1vw);
 }
 
 .nutrition-content .maximum {
@@ -177,7 +179,6 @@
 
 .nutrition-content .count {
   align-self: flex-end;
-  margin-right: min(5.4px, 1vw);
 }
 
 .nutrition-content .exlarge-bold {
@@ -204,7 +205,7 @@
 }
 
 .nutrition-content .small-bold {
-  height: calc(min(54px, 10vw) * 0.48);
+  line-height: calc(min(54px, 10vw) * 0.48);
   font-size: calc(min(54px, 10vw) * 0.4);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
@@ -212,7 +213,7 @@
 }
 
 .nutrition-content .small-thin {
-  height: calc(min(54px, 10vw) * 0.48);
+  line-height: calc(min(54px, 10vw) * 0.48);
   font-size: calc(min(54px, 10vw) * 0.4);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -220,6 +221,7 @@
 }
 
 .nutrition-content .exsmall-thin {
+  line-height: calc(min(54px, 10vw) * 0.35);
   font-size: calc(min(54px, 10vw) * 0.3);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
