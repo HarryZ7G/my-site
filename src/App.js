@@ -7,6 +7,7 @@ import Portrait from "./media/Portrait Colour.jpeg";
 import Badge from "./components/badge.js";
 import Phone from "./components/phone.js";
 import Envelope from "./components/envelope";
+import Nutrition from "./components/nutrition";
 import Construction from "./components/construction.js";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         </div>
         <Section name="Education" />
         <Envelope />
+        <Nutrition />
         <Construction />
       </div>
     </div>
