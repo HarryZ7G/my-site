@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.e6704212.css",
+    "main.css": "/my-site/static/css/main.b998e35e.css",
     "main.js": "/my-site/static/js/main.d53c2586.js",
     "static/js/787.a5fa54f9.chunk.js": "/my-site/static/js/787.a5fa54f9.chunk.js",
     "static/media/ConsultingDay.jpg": "/my-site/static/media/ConsultingDay.797b13ec39a8f98526c3.jpg",
@@ -18,12 +18,12 @@
     "static/media/Java.svg": "/my-site/static/media/Java.a751bad6c81431ab4dd6fa6632a65540.svg",
     "static/media/Oracle.svg": "/my-site/static/media/Oracle.678bc77faa1a2705595158c013fabaee.svg",
     "index.html": "/my-site/index.html",
-    "main.e6704212.css.map": "/my-site/static/css/main.e6704212.css.map",
+    "main.b998e35e.css.map": "/my-site/static/css/main.b998e35e.css.map",
     "main.d53c2586.js.map": "/my-site/static/js/main.d53c2586.js.map",
     "787.a5fa54f9.chunk.js.map": "/my-site/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6704212.css",
+    "static/css/main.b998e35e.css",
     "static/js/main.d53c2586.js"
   ]
 }
