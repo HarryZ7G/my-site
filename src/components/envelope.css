@@ -6,6 +6,8 @@
   box-shadow: 3px 3px 8px var(--shadow-colour);
   background-color: var(--badge-colour);
   rotate: -5deg;
+  margin-bottom: min(200px, 27vw);
+  z-index: 5;
 }
 
 @media screen and (max-width: 1100px) and (min-width: 625px) {

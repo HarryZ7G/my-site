@@ -5,11 +5,11 @@
   box-shadow: 3px 3px 8px var(--shadow-colour);
   background-color: var(--background-colour);
   border-radius: 10px;
-  height: calc(min(54px, 10vw) * 5.5);
-  width: calc(min(54px, 10vw) * 9);
+  height: calc(min(46px, 10vw) * 5.5);
+  width: calc(min(46px, 10vw) * 9);
   overflow: hidden;
-  margin-top: min(81px, 15vw);
-  margin-bottom: min(81px, 15vw);
+  margin-top: min(69px, 15vw);
+  margin-bottom: min(69px, 15vw);
 }
 
 .construction .top {
@@ -23,6 +23,7 @@
 
 .construction .top h2 {
   font-weight: bold;
+  font-size: min(46px, 10vw);
   color: var(--background-colour);
 }
 
@@ -37,5 +38,6 @@
 
 .construction .bottom h2 {
   font-weight: bold;
+  font-size: min(46px, 10vw);
   color: var(--construction-colour);
 }

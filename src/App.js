@@ -35,6 +35,7 @@ function App() {
         </div>
         <Section name="Education" />
         <Envelope />
+        <Section name="Bonus content" />
         <Nutrition />
         <Construction />
       </div>

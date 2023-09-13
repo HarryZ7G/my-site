@@ -63,6 +63,9 @@
     --envelope-window-colour: #eee;
     --envelope-pattern: radial-gradient(circle at top,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #eee 10% ,#eee 15% , transparent 16%);
     --envelope-pattern-size: 15px 15px;
+    --nutrition-title-colour: #333;
+    --nutrition-border-colour: #999;
+    --nutrition-border-highlight: #666;
   }
 }
 
@@ -131,6 +134,9 @@
     --envelope-window-colour: #ddd;
     --envelope-pattern: radial-gradient(circle at top,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%);
     --envelope-pattern-size: 15px 15px;
+    --nutrition-title-colour: #ddd;
+    --nutrition-border-colour: #666;
+    --nutrition-border-highlight: #999;
   }
 }
 
