@@ -20,7 +20,7 @@
   background-color: var(--badge-colour);
   box-shadow: 3px 3px 8px var(--shadow-colour);
   rotate: -5deg;
-  transition: 0.7s ease;
+  transition: transform 0.7s ease;
   transition-property: transform box-shadow;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -44,7 +44,7 @@
   box-shadow: 3px 3px 8px var(--shadow-colour);
   transform: rotateY(180deg);
   rotate: -5deg;
-  transition: 0.7s ease;
+  transition: transform 0.7s ease;
   transition-property: transform box-shadow;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

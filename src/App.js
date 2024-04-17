@@ -9,6 +9,7 @@ import Phone from "./components/phone.js";
 import Envelope from "./components/envelope";
 import Nutrition from "./components/nutrition";
 import Construction from "./components/construction.js";
+import Binance from "./components/binance.js";
 
 function App() {
   const [content, setContent] = React.useState(null);
@@ -29,6 +30,7 @@ function App() {
           </div>
         </div>
         <Section name="Experience" />
+        <Binance />
         <div className="items-grid">
           <Badge />
           <Phone />

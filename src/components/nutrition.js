@@ -18,8 +18,8 @@ function Nutrition() {
       },
       {
         root: null,
-        rootMargin: "-20% 0 -20% 0",
-        threshold: 1.0,
+        rootMargin: "0px",
+        threshold: 1.0
       }
     );
     let reference = happyRef.current;

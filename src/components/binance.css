@@ -1,0 +1,374 @@
+@keyframes binance-animate {
+  0% {
+    translate: 0 0;
+  }
+  100% {
+    translate: calc(6 * min(9vw, 50px)) 0;
+  }
+}
+
+.binance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: min(72vw, 400px);
+  width: 200px;
+  margin-bottom: 10vh;
+  rotate: -5deg;
+}
+
+.binance-move {
+  animation: binance-animate 1s ease-in-out 1s forwards;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1300px) {
+  @keyframes binance-animate {
+    0% {
+      translate: calc((100vw - 550px) / 2) 0;
+    }
+    100% {
+      translate: calc(6 * min(9vw, 50px)) 0;
+    }
+  }
+
+  .binance {
+    translate: calc((100vw - 550px) / 2) 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  @keyframes binance-animate {
+    0% {
+      translate: 375px 0;
+    }
+    100% {
+      translate: calc(6 * min(9vw, 50px)) 0;
+    }
+  }
+
+  .binance {
+    translate: 375px 0;
+  }
+}
+
+@keyframes yubi-animate {
+  0% {
+    translate: min(9vw, 50px) 0;
+  }
+  100% {
+    translate: calc(-1 * min(9vw, 50px)) 0;
+  }
+}
+
+.yubi {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  translate: min(9vw, 50px) 0;
+  cursor: pointer;
+  /* translate: calc(-1.7 * min(9vw, 50px)) 0; */
+}
+
+.yubi-plug {
+  animation: yubi-animate 0.5s ease-in forwards;
+  cursor: default;
+}
+
+.yubi .lightning {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  width: calc(min(9vw, 50px) * 1);
+  background-color: #CBC2B9;
+  border-radius: calc(min(36vw, 200px) * 0.03) 0 0 calc(min(36vw, 200px) * 0.03);
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+}
+
+.yubi .lightning .plastic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 36%;
+  margin-left: 10%;
+  background-color: #EAE6E6;
+  box-sizing: border-box;
+  padding: 9% 0 9% 0;
+  border-radius: calc(min(36vw, 200px) * 0.02);
+}
+
+.yubi .lightning .plastic .pins {
+  width: 60%;
+  height: 6%;
+  background-color: #FFCC6A;
+}
+
+.yubi .base {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  width: calc(0.9 * min(36vw, 200px));
+  background-color: var(--yubi-body-colour);
+  border-radius: calc(min(36vw, 200px) * 0.03);
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+}
+
+.yubi .base .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  height: 60%;
+  border-color: #5A5A5A;
+  border-width: min(0.45vw, 2.5px);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: var(--yubi-icon-colour);
+  margin-left: 25%;
+}
+
+.yubi .base .icon .binance-icon {
+  height: 60%;
+}
+
+.yubi .base .loop {
+  aspect-ratio: 1 / 1;
+  height: 20%;
+  border-color: #FFCC6A;
+  border-width: min(0.45vw, 2.5px);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: var(--background-colour);
+  margin-left: 20%;
+  box-shadow: inset 6px 6px 16px var(--shadow-colour);
+}
+
+.iphonef {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 171 / 85;
+  height: calc(7.3 * min(9vw, 50px));
+  background-color: var(--iphone-white);
+  border-radius: min(9vw, 50px);
+  border-width: min(0.63vw, 3.5px);
+  border-color: var(--iphone-border);
+  border-style: solid;
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+  position: absolute;
+  translate: calc(-2 * min(63vw, 350px)) 0;
+  opacity: 0;
+  transition: translate 1s ease, opacity 1s ease;
+  z-index: 1;
+}
+
+.yubi-appear {
+  translate: calc(-1.4 * min(63vw, 350px)) 0;
+  opacity: 1;
+}
+
+.iphonef .top {
+  display: flex;
+  flex-direction: column;
+  translate: calc(-6.2 * min(9vw, 50px));
+}
+
+.iphonef .top .speaker {
+  aspect-ratio: 10 / 75;
+  height: calc(min(9vw, 50px) * 1.3);
+  background-color: #272727;
+  position: absolute;
+  translate: -50% -50%;
+  /* translate: calc(-6 * min(9vw, 50px)) -50%; */
+  border-radius: min(18vw, 100px);
+}
+
+.iphonef .top .camera {
+  aspect-ratio: 1 / 1;
+  height: calc(min(9vw, 50px) * 0.35);
+  background-color: #272727;
+  position: absolute;
+  translate: -50% calc(1.2 * min(9vw, 50px) - 50%);
+  /* translate: calc(-6.09 * min(9vw, 50px)) calc(1.2 * min(9vw, 50px) - 50%); */
+  border-radius: min(18vw, 100px);
+}
+
+.iphonef .screen-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3 / 2;
+  height: calc(6.7 * min(9vw, 50px));
+  background-color: var(--iphone-screen);
+  border-radius: min(0.63vw, 3.5px);
+  position: absolute;
+}
+
+.iphonef .screen-border .screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--appstore-background);
+  height: 97%;
+  width: 98%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 1s;
+  box-sizing: border-box;
+  /* padding: 3% 3% 0 0; */
+}
+
+.iphonef .screen-border .screen-on {
+  visibility: visible;
+  opacity: 1;
+}
+
+.iphonef .screen-border .screen a {
+  text-decoration: none;
+  margin: 1% 3% 0 0;
+}
+
+.iphonef .screen-border .screen .top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  background-color: var(--iphone-top-bar);
+  border-bottom: 0.5px solid var(--iphone-border);
+  box-sizing: border-box;
+  padding-top: 1.5%;
+}
+
+.iphonef .screen-border .screen .top-bar h2 {
+  font-size: calc(0.28 * min(9vw, 50px));
+}
+
+.iphonef .screen-border .screen h2 {
+  margin: 0;
+  color: var(--font-colour);
+  font-size: calc(0.25 * min(9vw, 50px));
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 6%;
+  margin-bottom: 1.5%;
+}
+
+.iphonef .screen-border .screen h3 {
+  margin: 0;
+  color: var(--appstore-thin-colour);
+  font-size: calc(0.2 * min(9vw, 50px));
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 6%;
+}
+
+@keyframes message-send {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.iphonef .screen-border .screen .binance-page-animate {
+  animation: message-send 0.5s ease-in-out 1.5s forwards;
+}
+
+.iphonef .screen-border .screen .binance-page {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 25 / 18;
+  height: 50%;
+  background-color: var(--binance-link-colour);
+  border-radius: calc(0.35 * min(9vw, 50px));
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.iphonef .screen-border .screen .binance-image {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: calc(0.35 * min(9vw, 50px)) calc(0.35 * min(9vw, 50px)) 0 0;
+  margin-bottom: 3.5%;
+}
+
+.iphonef .screen-border .screen .bubble-animate {
+  animation: message-send 0.5s ease-in-out 1.7s forwards;
+}
+
+.iphonef .screen-border .screen .bubble {
+  background-color: #007AFF;
+  border-radius: calc(0.35 * min(9vw, 50px));
+  white-space: nowrap;
+  margin: 0.5% 3% 0 0;
+  opacity: 0;
+}
+
+.iphonef .screen-border .screen .bubble h2 {
+  color: #FFF;
+  font-size: calc(0.27 * min(9vw, 50px));
+  margin: calc(0.09 * min(9vw, 50px)) calc(0.2 * min(9vw, 50px)) calc(0.09 * min(9vw, 50px)) calc(0.2 * min(9vw, 50px));
+}
+
+.iphonef .screen-border .screen .chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12.5%;
+  width: 94%;
+  height: 7%;
+  border-radius: calc(0.35 * min(9vw, 50px));
+  align-self: center;
+  border: 1px solid var(--iphone-border);
+  box-sizing: border-box;
+  padding-left: 1.5%;
+}
+
+.iphonef .screen-border .screen .chat h2 {
+  margin: 0 0 0 0;
+  color: var(--iphone-border);
+}
+
+.iphonef .screen-border .screen .send {
+  aspect-ratio: 1 / 1;
+  height: 80%;
+  border-radius: 100%;
+  background-color: #007AFF;
+  margin-right: 0.5%;
+}
+
+.iphonef .home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  height: calc(1.3 * min(9vw, 50px));
+  width: calc(1.3 * min(9vw, 50px));
+  border-radius: min(9vw, 50px);
+  border-width: min(0.45vw, 2.5px);
+  border-color: var(--iphone-home-screen-border);
+  border-style: solid;
+  position: absolute;
+  translate: calc(6.2 * min(9vw, 50px)) 0;
+  box-shadow: inset 6px 6px 16px #8881;
+}
+
+.iphonef .home-button .square {
+  aspect-ratio: 1 / 1;
+  height: calc(0.36 * min(9vw, 50px));
+  width: calc(0.36 * min(9vw, 50px));
+  border-radius: min(0.9vw, 5px);
+  border-width: min(0.45vw, 2.5px);
+  border-color: #A9A9A9;
+  border-style: solid;
+  position: absolute;
+}

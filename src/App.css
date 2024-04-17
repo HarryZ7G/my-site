@@ -61,11 +61,47 @@
     --appstore-line-colour: #ddd;
     --appstore-event-colour: #fff;
     --envelope-window-colour: #eee;
-    --envelope-pattern: radial-gradient(circle at top,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #eee 10% ,#eee 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #eee 10% ,#eee 15% , transparent 16%);
+    --envelope-pattern: radial-gradient(
+        circle at top,
+        transparent 9%,
+        #eee 10%,
+        #eee 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at bottom,
+        transparent 9%,
+        #eee 10%,
+        #eee 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at right,
+        transparent 9%,
+        #eee 10%,
+        #eee 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at left,
+        transparent 9%,
+        #eee 10%,
+        #eee 15%,
+        transparent 16%
+      );
     --envelope-pattern-size: 15px 15px;
     --nutrition-title-colour: #333;
     --nutrition-border-colour: #999;
     --nutrition-border-highlight: #666;
+    --yubi-icon-colour: #EFEFEF;
+    --yubi-body-colour: #393939;
+    --iphone-white: #EFEFEF;
+    --iphone-border: #BEBEBE;
+    --iphone-screen: #272727;
+    --iphone-top-bar: #F5F5F5;
+    --iphone-border: #CCC;
+    --iphone-home-screen-border: #E6E6E6;
+    --binance-link-colour: #E5E5E5;
   }
 }
 
@@ -132,11 +168,47 @@
     --appstore-line-colour: #333;
     --appstore-event-colour: #222;
     --envelope-window-colour: #ddd;
-    --envelope-pattern: radial-gradient(circle at top,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at bottom,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at right,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%), radial-gradient(circle at left,transparent 9%, #ddd 10% ,#ddd 15% , transparent 16%);
+    --envelope-pattern: radial-gradient(
+        circle at top,
+        transparent 9%,
+        #ddd 10%,
+        #ddd 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at bottom,
+        transparent 9%,
+        #ddd 10%,
+        #ddd 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at right,
+        transparent 9%,
+        #ddd 10%,
+        #ddd 15%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at left,
+        transparent 9%,
+        #ddd 10%,
+        #ddd 15%,
+        transparent 16%
+      );
     --envelope-pattern-size: 15px 15px;
     --nutrition-title-colour: #ddd;
     --nutrition-border-colour: #666;
     --nutrition-border-highlight: #999;
+    --yubi-body-colour: #333;
+    --yubi-icon-colour: #333;
+    --iphone-white: #E0E0E0;
+    --iphone-border: #AAA;
+    --iphone-screen: #1A1A1A;
+    --iphone-top-bar: #222;
+    --iphone-home-screen-border: #D6D6D6;
+    --iphone-border: #555;
+    --binance-link-colour: #333;
   }
 }
 
@@ -211,5 +283,5 @@ h2 {
   background-color: var(--background-colour);
   background-image: var(--crosshatch-background);
   background-size: var(--crosshatch-size);
-  overflow-x: hidden;;
+  overflow-x: hidden;
 }

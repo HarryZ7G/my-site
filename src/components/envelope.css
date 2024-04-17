@@ -40,6 +40,7 @@
   white-space: pre-line;
   color: #888;
   font-size: calc(min(25px, 4vw) * 0.8);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .envelope .outside .text-wrapper .title {
@@ -56,6 +57,7 @@
   white-space: pre-line;
   color: #000;
   font-size: calc(min(25px, 4vw) * 0.8);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .envelope .window .text-wrapper .title {
