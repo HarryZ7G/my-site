@@ -7,20 +7,33 @@ function Binance() {
   const yubiRef = useRef(null);
 
   const [yubi, setYubi] = React.useState(false);
+  const [phone, setPhone] = React.useState("");
   const [plug, setPlug] = React.useState("");
   const [display, setDisplay] = React.useState("");
   const [move, setMove] = React.useState("");
-  const [page, setPage]= React.useState("");
+  const [page, setPage] = React.useState("");
   const [bubble, setBubble] = React.useState("");
+  const [tap, setTap] = React.useState("");
+
+  const plugged = () => {
+    setPlug("yubi-plug");
+    setPhone("iphone-plug");
+    setDisplay("screen-on");
+    setMove("binance-move");
+    setPage("binance-page-animate");
+    setBubble("bubble-animate");
+  };
 
   useEffect(() => {
     if (plug === "yubi-plug") {
       setYubi(true);
+      setTap(false);
     } else {
       const observer = new IntersectionObserver(
         (entries) => {
           const [entry] = entries;
           setYubi(entry.isIntersecting);
+          setTap(entry.isIntersecting);
         },
         {
           root: null,
@@ -38,7 +51,10 @@ function Binance() {
 
   return (
     <div className={`binance ${move}`}>
-      <div className={`iphonef ${yubi ? `yubi-appear` : ``}`}>
+      <div
+        className={`iphonef ${phone} ${yubi ? `yubi-appear` : ``}`}
+        onClick={plugged}
+      >
         <div className="top">
           <div className="speaker" />
           <div className="camera" />
@@ -62,10 +78,8 @@ function Binance() {
               <h2>TechOps Engineer since October 2023</h2>
             </div>
             <div className="chat">
-              <h2>
-                iMessage
-              </h2>
-              <div className="send"/>
+              <h2>iMessage</h2>
+              <div className="send" />
             </div>
           </div>
         </div>
@@ -73,17 +87,7 @@ function Binance() {
           <div className="square" />
         </div>
       </div>
-      <div
-        className={`yubi ${plug}`}
-        ref={yubiRef}
-        onClick={() => {
-          setPlug("yubi-plug");
-          setDisplay("screen-on");
-          setMove("binance-move");
-          setPage("binance-page-animate");
-          setBubble("bubble-animate");
-        }}
-      >
+      <div className={`yubi ${plug}`} ref={yubiRef} onClick={plugged}>
         <div className="lightning">
           <div className="plastic">
             <div className="pins" />
@@ -106,6 +110,9 @@ function Binance() {
           </div>
           <div className="loop" />
         </div>
+        <text className={`happy ${tap ? "happy-animate" : ""}`}>
+          Tap me
+        </text>
       </div>
     </div>
   );

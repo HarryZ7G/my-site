@@ -144,7 +144,7 @@
   box-shadow: inset 6px 6px 16px var(--shadow-colour);
 }
 
-.iphonef {
+.binance .iphonef {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,9 +161,14 @@
   opacity: 0;
   transition: translate 1s ease, opacity 1s ease;
   z-index: 1;
+  cursor: pointer;
 }
 
-.yubi-appear {
+.binance .iphone-plug {
+  cursor: default;
+}
+
+.binance .yubi-appear {
   translate: calc(-1.4 * min(63vw, 350px)) 0;
   opacity: 1;
 }
@@ -371,4 +376,15 @@
   border-color: #A9A9A9;
   border-style: solid;
   position: absolute;
+}
+
+.binance .happy {
+  font-size: min(4.5vw, 25px);
+  translate: calc(1.6 * min(9vw, 50px)) calc(-0.7 * min(9vw, 50px));
+  transition: translate 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.binance .happy-animate {
+  translate: calc(1.6 * min(9vw, 50px)) calc(-1.5 * min(9vw, 50px));
 }
