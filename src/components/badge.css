@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.half-flip {
+  transform: rotateY(60deg);
+}
+
 .badge:hover {
   box-shadow: 6px 6px 16px var(--shadow-colour);
 }
@@ -44,7 +48,7 @@
   box-shadow: 3px 3px 8px var(--shadow-colour);
   transform: rotateY(180deg);
   rotate: -5deg;
-  transition: transform 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
   transition-property: transform box-shadow;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -59,12 +63,12 @@
 }
 
 .badge-flip {
-  transform: rotateY(180deg) rotate(-5deg);
+  transform: rotateY(180deg);
   /* box-shadow: 6px 6px 24px var(--shadow-colour); */
 }
 
 .badge-backflip {
-  transform: rotateY(0deg) rotate(5deg);
+  transform: rotateY(0deg);
   /* box-shadow: 6px 6px 24px var(--shadow-colour); */
 }
 

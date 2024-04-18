@@ -32,8 +32,10 @@ function Binance() {
       const observer = new IntersectionObserver(
         (entries) => {
           const [entry] = entries;
-          setYubi(entry.isIntersecting);
-          setTap(entry.isIntersecting);
+          if (entry.isIntersecting) {
+            setYubi(entry.isIntersecting);
+            setTap(entry.isIntersecting);
+          }
         },
         {
           root: null,
@@ -110,9 +112,7 @@ function Binance() {
           </div>
           <div className="loop" />
         </div>
-        <text className={`happy ${tap ? "happy-animate" : ""}`}>
-          Tap me
-        </text>
+        <text className={`happy ${tap ? "happy-animate" : ""}`}>Tap me</text>
       </div>
     </div>
   );
