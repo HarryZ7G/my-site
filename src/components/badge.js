@@ -28,7 +28,7 @@ function Badge() {
       },
       {
         root: null,
-        rootMargin: "-15% 0 -15% 0",
+        rootMargin: "100% 0 -30% 0",
         threshold: 1.0,
       }
     );

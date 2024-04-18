@@ -33,9 +33,9 @@ function Binance() {
         (entries) => {
           const [entry] = entries;
           if (entry.isIntersecting) {
-            setYubi(entry.isIntersecting);
-            setTap(entry.isIntersecting);
+            setYubi(true);
           }
+          setTap(entry.isIntersecting);
         },
         {
           root: null,
