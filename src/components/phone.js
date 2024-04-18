@@ -1,129 +1,171 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./phone.css";
 import MCG from "../media/MCG.png";
 // import Star from "./star";
 import ConsultingDay from "../media/ConsultingDay.jpg";
 import CaseComp from "../media/CaseComp.jpg";
 
-function iPhone() {
+function Phone() {
+  const phoneRef = useRef(null);
+
+  const [display, setDisplay] = React.useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setDisplay(true);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0 0 0 0",
+        threshold: 0.8,
+      }
+    );
+    let reference = phoneRef.current;
+    if (phoneRef.current) observer.observe(phoneRef.current);
+    return () => {
+      if (reference) observer.unobserve(reference);
+    };
+  }, [phoneRef]);
+
   return (
-    <div className="phone">
+    <div className="phone-case" ref={phoneRef}>
+      {/* <div className="lockscreen">
+        <h2>
+          Monday, April 1
+        </h2>
+        <h1>
+          10:08
+        </h1>
+        <div className="home-bar" />
+      </div> */}
+
+      <div className="bezel" />
       <div className="notch" />
-      <div className="status">
-        <text className="time">10:08</text>
-        <text className="sos">SOS Only</text>
-      </div>
+      <h2>Monday, April 1</h2>
+      <h1>10:08</h1>
 
-      <div className="header">
-        <div className="icon">
-          <img src={MCG} alt="mcg" />
+      <div className={`phone ${display ? `display-on` : ``}`}>
+        {/* <div className="notch" /> */}
+        <div className="status">
+          <text className="time">10:08</text>
+          <text className="sos">SOS Only</text>
         </div>
-        <div className="title">
-          <text className="name">
-            {`UTSC - Management \n Consulting Group\n`}
-          </text>
-          <text className="description">Making meaningful impact</text>
-          <a
-            href="https://www.utscmcg.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="open"
-          >
-            OPEN
-          </a>
-        </div>
-      </div>
 
-      <div className="rating">
-        <div className="top-line" />
-        <div className="ratings">
-          <div className="area">
-            <div className="practice">
-              <text>Practice Areas</text>
-            </div>
-            <div className="value-wrapper">
-              <text className="value">4.0</text>
-            </div>
-            <div className="circles">
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <div className="circle" />
-              <div className="empty-circle" />
-            </div>
-            {/* <div className="stars">
+        <div className="header">
+          <div className="icon">
+            <img src={MCG} alt="mcg" />
+          </div>
+          <div className="title">
+            <text className="name">
+              {`UTSC - Management \n Consulting Group\n`}
+            </text>
+            <text className="description">Making meaningful impact</text>
+            <a
+              href="https://www.utscmcg.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="open"
+            >
+              OPEN
+            </a>
+          </div>
+        </div>
+
+        <div className="rating">
+          <div className="top-line" />
+          <div className="ratings">
+            <div className="area">
+              <div className="practice">
+                <text>Practice Areas</text>
+              </div>
+              <div className="value-wrapper">
+                <text className="value">4.0</text>
+              </div>
+              <div className="circles">
+                <div className="circle" />
+                <div className="circle" />
+                <div className="circle" />
+                <div className="circle" />
+                <div className="empty-circle" />
+              </div>
+              {/* <div className="stars">
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="star" />
               <Star fill="none" />
             </div> */}
+            </div>
+            <div className="divide" />
+            <div className="area">
+              <div className="practice">
+                <text>Experience</text>
+              </div>
+              <div className="value-wrapper">
+                <text className="value">8</text>
+              </div>
+              <div className="unit">
+                <text>years</text>
+              </div>
+            </div>
+            <div className="divide" />
+            <div className="area">
+              <div className="practice">
+                <text>Annual Clients</text>
+              </div>
+              <div className="value-wrapper">
+                <text className="value">6</text>
+              </div>
+              <div className="unit">
+                <text>consultations</text>
+              </div>
+            </div>
+            <div className="divide" />
           </div>
-          <div className="divide" />
-          <div className="area">
-            <div className="practice">
-              <text>Experience</text>
-            </div>
-            <div className="value-wrapper">
-              <text className="value">8</text>
-            </div>
-            <div className="unit">
-              <text>years</text>
-            </div>
-          </div>
-          <div className="divide" />
-          <div className="area">
-            <div className="practice">
-              <text>Annual Clients</text>
-            </div>
-            <div className="value-wrapper">
-              <text className="value">6</text>
-            </div>
-            <div className="unit">
-              <text>consultations</text>
-            </div>
-          </div>
-          <div className="divide" />
+          <div className="bottom-line" />
         </div>
-        <div className="bottom-line" />
+        <div className="ea">
+          <div className="ea-wrapper">
+            <text>Events and Positions</text>
+          </div>
+          <text className="ea-time">Since July 2021</text>
+          <div className="event">
+            <div className="image-wrapper">
+              <img src={ConsultingDay} alt="consulting day" />
+              <div className="text-box">
+                <text className="event-title">{`Consulting Day\n`}</text>
+                <text className="event-description">
+                  Connect with industry professionals
+                </text>
+              </div>
+            </div>
+            <text className="title">{`IT Director\n`}</text>
+            <text className="duration">September 2022 - May 2023</text>
+          </div>
+          <div className="event">
+            <div className="image-wrapper">
+              <img src={CaseComp} alt="buddy program" />
+              <div className="text-box">
+                <text className="event-title">{`Buddy Program\n`}</text>
+                <text className="event-description">
+                  Practice presentation skills with a partner
+                </text>
+              </div>
+            </div>
+            <text className="title">
+              {`IT & Data Analytics Senior Partner\n`}
+            </text>
+            <text className="duration">July 2021 - August 2022</text>
+          </div>
+        </div>
       </div>
-      <div className="ea">
-        <div className="ea-wrapper">
-          <text>Events and Positions</text>
-        </div>
-        <text className="ea-time">Since July 2021</text>
-        <div className="event">
-          <div className="image-wrapper">
-            <img src={ConsultingDay} alt="consulting day" />
-            <div className="text-box">
-              <text className="event-title">{`Consulting Day\n`}</text>
-              <text className="event-description">
-                Connect with industry professionals
-              </text>
-            </div>
-          </div>
-          <text className="title">{`IT Director\n`}</text>
-          <text className="duration">September 2022 - May 2023</text>
-        </div>
-        <div className="event">
-          <div className="image-wrapper">
-            <img src={CaseComp} alt="buddy program" />
-            <div className="text-box">
-              <text className="event-title">{`Buddy Program\n`}</text>
-              <text className="event-description">
-                Practice presentation skills with a partner
-              </text>
-            </div>
-          </div>
-          <text className="title">
-            {`IT & Data Analytics Senior Partner\n`}
-          </text>
-          <text className="duration">July 2021 - August 2022</text>
-        </div>
-      </div>
-      <div className="home-bar" />
+      <div className={`home-bar ${display ? "home-bar-unlocked" : ""}`} />
     </div>
   );
 }
 
-export default iPhone;
+export default Phone;

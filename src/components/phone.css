@@ -1,28 +1,116 @@
-.phone {
-  /* aspect-ratio: 71.5 / 147.5; */
+.phone-case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  rotate: -5deg;
+  background-color: #000;
   margin-bottom: min(108px, 20vw);
+  border-radius: calc(min(400px, 80vw) * 0.15);
+  height: calc(min(400px, 80vw) * 2.02);
+  width: calc(min(400px, 80vw) * 1.01);
+  overflow: hidden;
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+}
+
+.lockscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  background-color: #111;
+  height: calc(min(400px, 80vw) * 2.02);
+  width: calc(min(400px, 80vw) * 1.01);
+  /* border-radius: calc(min(400px, 80vw) * 0.15); */
+  z-index: 1;
+  translate: 0 -400px;
+  opacity: 0.5;
+  transition: translate 1s ease-in, opacity 1s ease-in;
+}
+
+.bezel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  position: absolute;
+  align-self: center;
+  justify-self: center;
   height: calc(min(400px, 80vw) * 1.96);
   width: calc(min(400px, 80vw) * 0.95);
-  rotate: -5deg;
-  border-radius: calc(min(400px, 80vw) * 0.15);
-  background-color: var(--appstore-background);
-  box-shadow: 6px 6px 16px var(--shadow-colour);
-  border-width: calc(min(400px, 80vw) * 0.03);
+  /* border-radius: calc(min(400px, 80vw) * 0.15); */
+  z-index: 1;
   border-style: solid;
   border-color: #000;
+  border-radius: calc(min(400px, 80vw) * 0.15);
+  border-width: calc(min(400px, 80vw) * 0.03);
+}
+
+.phone-case h2 {
+  margin: calc(2 * min(40px, 8vw)) 0 calc(-0.3 * min(40px, 8vw)) 0;
+  font-size: calc(min(40px, 8vw) * 0.55);
+  color: #AAA;
+  font-weight: 100;
+}
+
+.phone-case h1 {
+  margin: 0;
+  font-size: calc(min(40px, 8vw) * 2.2);
+  color: #AAA;
+  font-weight: 100;
+}
+
+.lockscreen .home-bar {
+  position: absolute;
+  bottom: 2.5%;
+  height: 0.7%;
+  width: 32%;
+  background-color: #AAA;
+  border-radius: 20px;
+}
+
+.phone {
+  /* aspect-ratio: 71.5 / 147.5; */
+  position: absolute;
+  margin-top: calc(min(400px, 80vw) * 0.03);
+  /* justify-self: center; */
+  /* align-self: center; */
+  height: calc(min(400px, 80vw) * 1.96);
+  width: calc(min(400px, 80vw) * 0.95);
+  /* rotate: -5deg; */
+  background-color: var(--appstore-background);
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+  /* border-radius: calc(min(400px, 80vw) * 0.15); */
+  /* border-width: calc(min(400px, 80vw) * 0.03);
+  border-style: solid;
+  border-color: #000; */
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  transition: 1s ease-in-out;
+  transition-property: filter opacity;
+  filter: blur(5px);
+  opacity: 0;
 }
 
-.phone .notch {
+.display-on {
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* .phone .notch { */
+.notch {
   position: absolute;
   aspect-ratio: 3.5 / 1;
   background-color: #000;
   border-radius: 200px;
   width: 28%;
-  margin-top: 3%;
+  margin-top: 5.5%;
+  z-index: 1;
 }
 
 .phone .status {
@@ -305,9 +393,23 @@
 
 .phone .home-bar {
   position: absolute;
-  bottom: 1%;
-  height: 0.7%;
-  width: 32%;
+  bottom: calc(min(20px, 4vw) * 0.5);
+  height: calc(min(20px, 4vw) * 0.25);
+  width: calc(min(20px, 4vw) * 6.5);
   background-color: var(--font-colour);
   border-radius: 20px;
+  z-index: 1;
+}
+
+.phone-case .home-bar {
+  position: absolute;
+  bottom: calc(min(20px, 4vw) * 1.1);
+  height: calc(min(20px, 4vw) * 0.25);
+  width: calc(min(20px, 4vw) * 6.5);
+  background-color: #AAA;
+  border-radius: 20px;
+}
+
+.phone-case .home-bar-unlocked {
+  background-color: var(--font-colour);
 }
