@@ -7,10 +7,48 @@ import CaseComp from "../media/CaseComp.jpg";
 
 function Phone() {
   const phoneRef = useRef(null);
-
   const [display, setDisplay] = React.useState(false);
+  const [time, setTime] = React.useState("10:08");
+  const [calendar, setCalendar] = React.useState("Monday, April 1");
+  const months = [
+    "Janurary",
+    "Feburary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
+  const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ]
+
+  const checkTime = () => {
+    let today = new Date();
+    let hour = today.getHours();
+    let minute = today.getMinutes();
+    let weekday = today.getDay();
+    let date = today.getDate();
+    let month = today.getMonth();
+    setTime(`${hour}:${minute}`);
+    setCalendar(`${weekdays[weekday]}, ${months[month]} ${date}`);
+  }
 
   useEffect(() => {
+    let t = setTimeout(function() {
+      checkTime();
+    }, 500);
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
@@ -28,6 +66,7 @@ function Phone() {
     if (phoneRef.current) observer.observe(phoneRef.current);
     return () => {
       if (reference) observer.unobserve(reference);
+      if (t) clearTimeout(t);
     };
   }, [phoneRef]);
 
@@ -45,13 +84,13 @@ function Phone() {
 
       <div className="bezel" />
       <div className="notch" />
-      <h2>Monday, April 1</h2>
-      <h1>10:08</h1>
+      <h2>{calendar}</h2>
+      <h1>{time}</h1>
 
       <div className={`phone ${display ? `display-on` : ``}`}>
         {/* <div className="notch" /> */}
         <div className="status">
-          <text className="time">10:08</text>
+          <text className="time">{time}</text>
           <text className="sos">SOS Only</text>
         </div>
 
