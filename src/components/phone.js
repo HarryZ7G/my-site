@@ -46,7 +46,7 @@ function Phone() {
   }
 
   useEffect(() => {
-    let t = setTimeout(function() {
+    let t = setInterval(function() {
       checkTime();
     }, 500);
     const observer = new IntersectionObserver(
@@ -66,7 +66,7 @@ function Phone() {
     if (phoneRef.current) observer.observe(phoneRef.current);
     return () => {
       if (reference) observer.unobserve(reference);
-      if (t) clearTimeout(t);
+      if (t) clearInterval(t);
     };
   }, [phoneRef]);
 
