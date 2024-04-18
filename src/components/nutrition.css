@@ -93,15 +93,15 @@
 
 @keyframes nutrition-content-appear {
   0% {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
   1% {
-    display: flex;
+    visibility: visible;
     opacity: 0;
   }
   100% {
-    display: flex;
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -184,12 +184,13 @@
 .nutrition .nutrition-content {
   position: absolute;
   width: calc(min(50px, 10vw) * 8.8);
-  display: none;
-  opacity: 0;
+  /* display: none; */
   display: flex;
+  opacity: 0;
   flex-direction: column;
   align-items: center;
   /* margin-top: min(50px, 10vw); */
+  visibility: hidden;
   margin: min(50px, 10vw) 0 0 0;
 }
 
