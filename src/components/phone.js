@@ -35,13 +35,16 @@ function Phone() {
   ]
 
   const checkTime = () => {
+    console.log("checking");
     let today = new Date();
     let hour = today.getHours();
     let minute = today.getMinutes();
     let weekday = today.getDay();
     let date = today.getDate();
     let month = today.getMonth();
-    setTime(`${hour}:${minute}`);
+    let hourZero = hour < 10 ? "0" : "";
+    let minuteZero = minute < 10 ? "0" : "";
+    setTime(`${hourZero}${hour}:${minuteZero}${minute}`);
     setCalendar(`${weekdays[weekday]}, ${months[month]} ${date}`);
   }
 
