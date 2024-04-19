@@ -35,7 +35,6 @@ function Phone() {
   ]
 
   const checkTime = () => {
-    console.log("checking");
     let today = new Date();
     let hour = today.getHours();
     let minute = today.getMinutes();
@@ -52,26 +51,19 @@ function Phone() {
     let t = setInterval(function() {
       checkTime();
     }, 500);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting) {
-          setDisplay(true);
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0 0 0 0",
-        threshold: 0.8,
+    const handlePhoneScroll = () => {
+      let reference = phoneRef.current;
+      let rect = reference.getBoundingClientRect();
+      if (rect.top < rect.height / 2) {
+        setDisplay(true);
       }
-    );
-    let reference = phoneRef.current;
-    if (phoneRef.current) observer.observe(phoneRef.current);
+    };
+    window.addEventListener("scroll", handlePhoneScroll);
     return () => {
-      if (reference) observer.unobserve(reference);
+      window.removeEventListener("scroll", handlePhoneScroll);
       if (t) clearInterval(t);
     };
-  }, [phoneRef]);
+  });
 
   return (
     <div className="phone-case" ref={phoneRef}>

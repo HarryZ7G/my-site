@@ -15,29 +15,22 @@ function Badge() {
   const [backflip, setBackflip] = React.useState("");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting) {
-          setFlip("badge-flip");
-          setBackflip("badge-backflip");
-        } else {
-          setFlip("");
-          setBackflip("");
-        }
-      },
-      {
-        root: null,
-        rootMargin: "100% 0 -30% 0",
-        threshold: 1.0,
+    const handleBadgeScroll = () => {
+      let reference = badgeRef.current;
+      let rect = reference.getBoundingClientRect();
+      if (rect.top < rect.height / 1.5) {
+        setFlip("badge-flip");
+        setBackflip("badge-backflip");
+      } else {
+        setFlip("");
+        setBackflip("");
       }
-    );
-    let reference = badgeRef.current;
-    if (badgeRef.current) observer.observe(badgeRef.current);
-    return () => {
-      if (reference) observer.unobserve(reference);
     };
-  }, [badgeRef]);
+    window.addEventListener("scroll", handleBadgeScroll);
+    return () => {
+      window.removeEventListener("scroll", handleBadgeScroll);
+    };
+  });
 
   return (
     <div className="laminate" ref={badgeRef}>
