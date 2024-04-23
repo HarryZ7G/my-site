@@ -47,7 +47,7 @@ function Nutrition() {
           <text className="thin-large">1 serving per dev</text>
           <div className="wide-wrapper margin-bottom">
             <text className="mid-bold">Total hours spent</text>
-            <text className="mid-bold">60 hours</text>
+            <text className="mid-bold">70 hours</text>
           </div>
           <div className="thick margin-bottom" />
           <text className="small-bold flex-start">Amount per serving</text>
@@ -77,12 +77,12 @@ function Nutrition() {
           <div className="thin small-margin-bottom" />
           <div className="wide-wrapper small-margin-bottom">
             <text className="small-bold">CSS animations/transitions</text>
-            <text className="small-bold">19</text>
+            <text className="small-bold">25</text>
           </div>
           <div className="thin small-margin-bottom" />
           <div className="wide-wrapper small-margin-bottom">
             <text className="small-bold">Reusable components</text>
-            <text className="small-bold">11</text>
+            <text className="small-bold">14</text>
           </div>
           <div className="thin small-margin-bottom" />
           <div className="wide-wrapper small-margin-bottom">
@@ -101,7 +101,7 @@ function Nutrition() {
           <div className="thick margin-bottom" />
           <div className="wide-wrapper small-margin-bottom">
             <text className="small-thin">Total lines of code</text>
-            <text className="small-thin">5348</text>
+            <text className="small-thin">5651</text>
           </div>
           <div className="thin small-margin-bottom" />
           <div className="wide-wrapper margin-bottom">

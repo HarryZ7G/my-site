@@ -39,7 +39,7 @@ function Binance() {
         },
         {
           root: null,
-          rootMargin: "-20% 0 -20% 0",
+          rootMargin: "-20% 0% -20% 0%",
           threshold: 1.0,
         }
       );
