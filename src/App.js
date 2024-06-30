@@ -3,7 +3,7 @@ import "./App.css";
 import "./Content.css";
 import Landing from "./components/landing.js";
 import Section from "./components/section.js";
-import Portrait from "./media/Portrait Colour.jpeg";
+import Portrait from "./media/Portrait Colour Compressed.jpeg";
 import Badge from "./components/badge.js";
 import Phone from "./components/phone.js";
 import Envelope from "./components/envelope";
