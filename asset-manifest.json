@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.1d61a7b4.css",
-    "main.js": "/my-site/static/js/main.c8c4bb96.js",
+    "main.css": "/my-site/static/css/main.26add85c.css",
+    "main.js": "/my-site/static/js/main.e58d0968.js",
     "static/js/787.a5fa54f9.chunk.js": "/my-site/static/js/787.a5fa54f9.chunk.js",
     "static/media/ConsultingDay.jpg": "/my-site/static/media/ConsultingDay.797b13ec39a8f98526c3.jpg",
-    "static/media/Portrait Colour.jpeg": "/my-site/static/media/Portrait Colour.2f540d0825897b88b2f3.jpeg",
     "static/media/UofT.png": "/my-site/static/media/UofT.4d74098de4c8b07b1bb8.png",
     "static/media/Linux.svg": "/my-site/static/media/Linux.0cb7bf4e5cb9ed5e2333d50935fad3d4.svg",
     "static/media/CaseComp.jpg": "/my-site/static/media/CaseComp.95c31e5e4579e6e6d8b5.jpg",
     "static/media/kghappy-webfont.woff": "/my-site/static/media/kghappy-webfont.4f03a6a5e483331956d2.woff",
+    "static/media/Portrait Colour Compressed.jpeg": "/my-site/static/media/Portrait Colour Compressed.26e10d38a2ad576c5dff.jpeg",
     "static/media/kghappy-webfont.woff2": "/my-site/static/media/kghappy-webfont.320748991b496a77fe77.woff2",
     "static/media/BinancePage.jpeg": "/my-site/static/media/BinancePage.5b01339f4e1b31735941.jpeg",
     "static/media/bouncy-personal_use_only-webfont.woff": "/my-site/static/media/bouncy-personal_use_only-webfont.cfef4f632b9c99998425.woff",
@@ -19,12 +19,12 @@
     "static/media/Java.svg": "/my-site/static/media/Java.a751bad6c81431ab4dd6fa6632a65540.svg",
     "static/media/Oracle.svg": "/my-site/static/media/Oracle.678bc77faa1a2705595158c013fabaee.svg",
     "index.html": "/my-site/index.html",
-    "main.1d61a7b4.css.map": "/my-site/static/css/main.1d61a7b4.css.map",
-    "main.c8c4bb96.js.map": "/my-site/static/js/main.c8c4bb96.js.map",
+    "main.26add85c.css.map": "/my-site/static/css/main.26add85c.css.map",
+    "main.e58d0968.js.map": "/my-site/static/js/main.e58d0968.js.map",
     "787.a5fa54f9.chunk.js.map": "/my-site/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d61a7b4.css",
-    "static/js/main.c8c4bb96.js"
+    "static/css/main.26add85c.css",
+    "static/js/main.e58d0968.js"
   ]
 }
