@@ -1,0 +1,114 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  width: 330px;
+  background-color: #f8f8f8;
+  margin-top: 100px;
+  border-radius: 50px;
+  box-shadow: 6px 6px 16px var(--shadow-colour);
+}
+
+.weather .housing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(
+    -45deg,
+    var(--background-colour),
+    #eaeaea
+  );
+  margin-top: 100px;
+  border-radius: 250px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 2px;
+}
+
+.weather .cutout {
+  position: absolute;
+  height: 5px;
+  width: 25px;
+  border-radius: 40px;
+  background-color: #ddd;
+  margin-top: 40px;
+}
+
+.weather .circle-cutout {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 2px;
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.weather .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  aspect-ratio: 1 / 1;
+  border-radius: 250px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 2px;
+  background: linear-gradient(
+    -45deg,
+    var(--background-colour),
+    #eaeaea
+  );
+  box-shadow: inset 4px 4px 8px #fff, inset -4px -4px 8px #3331;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.weather .button:active {
+  box-shadow: inset 4px 4px 8px var(--shadow-colour),
+    inset -4px -4px 8px var(--shadow-colour), 
+    inset 4px 4px 8px #fff,
+    inset -4px -4px 8px #3331;
+}
+
+.weather .press {
+  margin: 0;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  translate: 0 -40px;
+  background-color: #bbb;
+  color: transparent;
+  text-shadow: 1px 1px 3px #fffd;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.weather .bar {
+  height: 2%;
+  width: 30%;
+  box-shadow: inset 1px 1px 4px var(--shadow-colour);
+  border-radius: 100px;
+}
+
+.weather .description {
+  margin: 0;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  translate: 0 40px;
+  background-color: #bbb;
+  color: transparent;
+  text-shadow: 1px 1px 3px #fffd;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}

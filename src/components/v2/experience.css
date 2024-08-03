@@ -1,0 +1,111 @@
+.experience {
+  margin-bottom: calc(var(--landing-exponent) * 3);
+  /* width: calc(var(--landing-exponent) * 23); */
+  width: min(92vw, 600px);
+}
+
+.experience h1 {
+  color: #000;
+  font-size:  calc(var(--landing-exponent) * 1.9);
+  font-family: "Inter-Bold";
+  line-height: calc(var(--landing-exponent) * 1.9);
+  letter-spacing: calc(var(--landing-exponent) * 0.05);
+}
+
+.experience h2 {
+  color: #000;
+  font-size:  calc(var(--landing-exponent) * 1.7);
+  font-family: "Inter-Light";
+  line-height: calc(var(--landing-exponent) * 1.7);
+  letter-spacing: calc(var(--landing-exponent) * 0.03);
+  margin-bottom: calc(var(--landing-exponent) * 0.4);
+}
+
+.experience h3 {
+  margin: 0;
+  color: #000;
+  font-size:  calc(var(--landing-exponent) * 0.9);
+  font-family: "Inter-ExtraLight";
+  line-height: calc(var(--landing-exponent) * 0.9);
+  letter-spacing: calc(var(--landing-exponent) * 0.02);
+}
+
+.experience .top-bar {
+  display: flex;
+  height: calc(var(--landing-exponent) * 0.3);
+  width: calc(var(--landing-exponent) * 7);
+  margin-bottom: calc(var(--landing-exponent) * 0.8);
+}
+
+.experience .top-bar .black {
+  height: 100%;
+  width: 50%;
+  background-color: #000;
+}
+
+.experience .top-bar .colour {
+  height: 100%;
+  width: 50%;
+}
+
+.experience .bauhaus-section {
+  display: flex;
+  justify-content: space-between;
+  height: calc(var(--landing-exponent) * 3.5);
+  width: 100%;
+  margin-bottom: calc(var(--landing-exponent) * 0.8);
+}
+
+.experience .bauhaus-section .bauhaus {
+  height: 100%;
+  width: calc(var(--landing-exponent) * 7);
+}
+
+.experience .bauhaus-section .anchor-points {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(var(--landing-exponent) * 7);
+  justify-content: space-between;
+}
+
+.experience .bauhaus-section .anchor-points .anchor-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience .bauhaus-section .anchor-points .anchor-row .anchor-dot {
+  height: calc(var(--landing-exponent) * 0.3);
+  width: calc(var(--landing-exponent) * 0.3);
+}
+
+.experience .platform {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: calc(var(--landing-exponent) * 0.7);
+  /* background-color: #eee; */
+}
+
+.experience .platform .plank-cluster {
+  display: flex;
+  align-items: flex-end;
+}
+
+.experience .platform .plank-cluster .plank {
+  height: calc(var(--landing-exponent) * 0.6);
+  width: calc(var(--landing-exponent) * 7);
+  margin-bottom: calc(var(--landing-exponent) * 0.3);
+}
+
+.experience .binance-theme {
+  background-color: #F3BA2F;
+}
+
+.experience .ibm-theme {
+  background-color: #0F62FE;
+}
+
+.experience .mcg-theme {
+  background-color: #B072FF;
+}

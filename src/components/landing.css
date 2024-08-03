@@ -341,6 +341,9 @@
   bottom: calc(25vh + min(20vw, 125px, 15vh));
   display: flex;
   background-color: var(--background-colour);
+  /* background: radial-gradient(circle at center, transparent 40%, white 40.5%); */
+  background-size: 100% 100%;
+  background-position: 50% 50%;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1;
