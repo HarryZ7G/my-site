@@ -1,33 +1,35 @@
 .experience {
   margin-bottom: calc(var(--landing-exponent) * 3);
   /* width: calc(var(--landing-exponent) * 23); */
-  width: min(92vw, 600px);
+  width: min(92vw, 700px);
 }
 
 .experience h1 {
   color: #000;
-  font-size:  calc(var(--landing-exponent) * 1.9);
+  font-size:  calc(var(--landing-exponent) * 1.6);
   font-family: "Inter-Bold";
-  line-height: calc(var(--landing-exponent) * 1.9);
+  line-height: calc(var(--landing-exponent) * 1.6);
   letter-spacing: calc(var(--landing-exponent) * 0.05);
 }
 
 .experience h2 {
   color: #000;
-  font-size:  calc(var(--landing-exponent) * 1.7);
-  font-family: "Inter-Light";
-  line-height: calc(var(--landing-exponent) * 1.7);
+  font-size:  calc(var(--landing-exponent) * 1.4);
+  font-family: "Inter-Variable";
+  line-height: calc(var(--landing-exponent) * 1.4);
   letter-spacing: calc(var(--landing-exponent) * 0.03);
   margin-bottom: calc(var(--landing-exponent) * 0.4);
+  font-weight: 100;
 }
 
 .experience h3 {
   margin: 0;
   color: #000;
-  font-size:  calc(var(--landing-exponent) * 0.9);
-  font-family: "Inter-ExtraLight";
-  line-height: calc(var(--landing-exponent) * 0.9);
+  font-size:  calc(var(--landing-exponent) * 0.7);
+  font-family: "Inter-Variable";
+  line-height: calc(var(--landing-exponent) * 0.7);
   letter-spacing: calc(var(--landing-exponent) * 0.02);
+  font-weight: 100;
 }
 
 .experience .top-bar {
@@ -96,6 +98,10 @@
   height: calc(var(--landing-exponent) * 0.6);
   width: calc(var(--landing-exponent) * 7);
   margin-bottom: calc(var(--landing-exponent) * 0.3);
+}
+
+.experience .google-theme {
+  background-color: #EA4335;
 }
 
 .experience .binance-theme {

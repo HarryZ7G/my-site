@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  height: calc(var(--landing-exponent) * 2);
-  width: calc(var(--landing-exponent) * 2);
+  height: calc(var(--landing-exponent) * 1.8);
+  width: calc(var(--landing-exponent) * 1.8);
   margin-bottom: calc(var(--landing-exponent) * 0.4);
   /* background-color: #000; */
 }

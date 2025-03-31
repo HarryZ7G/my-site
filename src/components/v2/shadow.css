@@ -17,13 +17,17 @@
 .first-shadow {
   rotate: 15deg;
   margin-bottom: calc(0.5 * var(--landing-exponent));
+  opacity: 0.2;
+}
+
+.second-shadow {
   opacity: 0.4;
 }
 
 .third-shadow {
   rotate: -15deg;
   margin-top: calc(7 * var(--landing-exponent));
-  opacity: 0.4;
+  opacity: 0.2;
   margin-bottom: calc(1 * var(--landing-exponent));
 }
 

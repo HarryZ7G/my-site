@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: calc(var(--landing-exponent) * 1.7);
-  width: calc(var(--landing-exponent) * 1.7);
-  margin-bottom: calc(var(--landing-exponent) * -0.05);
+  height: calc(var(--landing-exponent) * 1.5);
+  width: calc(var(--landing-exponent) * 1.5);
+  margin-bottom: calc(var(--landing-exponent) * -0.02);
   margin-right: calc(var(--landing-exponent) * 0.4);
   /* background-color: #000; */
 }
