@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./badge.css";
-import QR from "./qr.js";
+import QR from "./qr.jsx";
 import IBM from "../media/IBM.png";
 import Java from "../media/icons/Java.svg";
 import Jenkins from "../media/icons/Jenkins.svg";

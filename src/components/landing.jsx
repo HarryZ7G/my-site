@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Exclaim from "./exclaim.js";
+import Exclaim from "./exclaim.jsx";
 import "./landing.css";
 
 function Landing(props) {

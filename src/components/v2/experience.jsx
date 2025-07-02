@@ -1,5 +1,5 @@
 import React from "react";
-import PlankArrow from "./plankArrow.js";
+import PlankArrow from "./plankArrow.jsx";
 import "./experience.css";
 
 function Experience(props) {
