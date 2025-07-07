@@ -61,7 +61,7 @@ function Baseline(props) {
     } else if (props.theme === "MCG") {
       setColours([
         <div
-          className={styles["baseline-colour"] + " " + styles["black"]}
+          className={styles["baseline-colour"] + " " + styles["off-black"]}
           key="1"
         />,
         <div
