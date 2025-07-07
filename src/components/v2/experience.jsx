@@ -1,33 +1,25 @@
 import React from "react";
 import PlankArrow from "./plankArrow.jsx";
+import Baseline from "./bauhaus/baseline.jsx";
+import Bauhaus from "./bauhaus/bauhaus.jsx";
+import Anchor from "./bauhaus/anchor.jsx";
+import Plank from "./bauhaus/plank.jsx";
 import "./experience.css";
 
 function Experience(props) {
   return (
     <div className="experience">
-      <div className="top-bar">
-        <div className="black" />
-        <div className={`colour ${props.theme}`} />
-      </div>
+      <Baseline theme={props.company} />
       <div className="bauhaus-section">
-        <div className={`bauhaus ${props.theme}`}></div>
-        <div className="anchor-points">
-          <div className="anchor-row">
-            <div className={`anchor-dot ${props.theme}`}></div>
-            <div className={`anchor-dot ${props.theme}`}></div>
-          </div>
-          <div className="anchor-row">
-            <div className={`anchor-dot ${props.theme}`}></div>
-            <div className={`anchor-dot ${props.theme}`}></div>
-          </div>
-        </div>
+        <Bauhaus theme={props.company} rows={4}/>
+        <Anchor theme={props.company} />
       </div>
       <h2>{props.title}</h2>
       <div className="platform">
         <h1>{props.company}</h1>
         <div className="plank-cluster">
           <PlankArrow />
-          <div className={`plank ${props.theme}`} />
+          <Plank theme={props.company} />
         </div>
       </div>
       <h3>{props.skills}</h3>

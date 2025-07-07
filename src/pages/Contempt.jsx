@@ -58,7 +58,7 @@ function Contempt() {
       setFirstBookFrame("first");
       setSecondBookFrame("second");
       setThirdBookFrame("third");
-    }, 3800)
+    }, 3800);
   }, []);
 
   return (
@@ -116,26 +116,22 @@ function Contempt() {
         title="Feature Analyst"
         company="Google"
         skills="JavaScript Python SQL"
-        theme="google-theme"
       />
 
       <Experience
         title="TechOps Engineer"
         company="Binance"
         skills="HTML CSS JavaScript"
-        theme="binance-theme"
       />
       <Experience
         title="Backend Developer"
         company="IBM"
         skills="Java Kafka SQL DB2 Oracle"
-        theme="ibm-theme"
       />
       <Experience
         title="IT Director"
         company="MCG"
         skills="HTML CSS JavaScript React.js"
-        theme="mcg-theme"
       />
     </div>
   );
