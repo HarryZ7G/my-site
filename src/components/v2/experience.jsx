@@ -1,5 +1,5 @@
 import React from "react";
-import PlankArrow from "./plankArrow.jsx";
+import Arrow from "./arrow";
 import Baseline from "./bauhaus/baseline.jsx";
 import Bauhaus from "./bauhaus/bauhaus.jsx";
 import Anchor from "./bauhaus/anchor.jsx";
@@ -11,14 +11,14 @@ function Experience(props) {
     <div className="experience">
       <Baseline theme={props.company} />
       <div className="bauhaus-section">
-        <Bauhaus theme={props.company} rows={4}/>
+        <Bauhaus theme={props.company} rows={4} />
         <Anchor theme={props.company} />
       </div>
       <h2>{props.title}</h2>
       <div className="platform">
         <h1>{props.company}</h1>
         <div className="plank-cluster">
-          <PlankArrow />
+          <Arrow style="plank" />
           <Plank theme={props.company} />
         </div>
       </div>

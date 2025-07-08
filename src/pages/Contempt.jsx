@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import "./Contempt.css";
 // import Shadow from "../components/v2/shadow";
 import Experience from "../components/v2/experience";
-import Arrow from "../components/v2/arrow";
+import Sectionv2 from "../components/v2/sectionv2";
+import University from "../components/v2/bauhaus/university";
 
 function Contempt() {
   const [cliff, setCliff] = React.useState("cliff-init");
@@ -105,19 +106,13 @@ function Contempt() {
         <Shadow custom="third-shadow" />
       </div> */}
 
-      <div className="section-v2">
-        <div className="circle"></div>
-        <h2 className="invert">Ex</h2>
-        <h2>perience</h2>
-        <Arrow />
-      </div>
+      <Sectionv2 title="Experience" />
 
       <Experience
-        title="Feature Analyst"
+        title="Technical Solutions Engineer"
         company="Google"
         skills="JavaScript Python SQL"
       />
-
       <Experience
         title="TechOps Engineer"
         company="Binance"
@@ -133,6 +128,10 @@ function Contempt() {
         company="MCG"
         skills="HTML CSS JavaScript React.js"
       />
+
+      <Sectionv2 title="Education" />
+
+      <University />
     </div>
   );
 }
