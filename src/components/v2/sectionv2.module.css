@@ -5,7 +5,7 @@
   margin-bottom: calc(var(--landing-exponent) * 3);
   /* margin-right: 20vw; */
   z-index: 1;
-  width: min(93vw, 850px);
+  width: min(93vw, 1000px);
 }
 
 .section-v2 h2 {

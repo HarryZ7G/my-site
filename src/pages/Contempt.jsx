@@ -109,7 +109,7 @@ function Contempt() {
       <Sectionv2 title="Experience" />
 
       <Experience
-        title="Technical Solutions Engineer"
+        title="Feature Analyst"
         company="Google"
         skills="JavaScript Python SQL"
       />

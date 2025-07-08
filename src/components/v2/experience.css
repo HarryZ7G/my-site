@@ -1,7 +1,7 @@
 .experience {
   margin-bottom: calc(var(--landing-exponent) * 3);
   /* width: calc(var(--landing-exponent) * 23); */
-  width: min(92vw, 800px);
+  width: min(92vw, 900px);
 }
 
 .experience h1 {
