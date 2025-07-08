@@ -8,8 +8,8 @@ function App() {
   return (
     <BrowserRouter basename="/my-site">
       <Routes>
-        <Route path="" element={<Circles />} />
-        <Route path="/v2" element={<Contempt />} />
+        <Route path="/v1" element={<Circles />} />
+        <Route path="" element={<Contempt />} />
       </Routes>
     </BrowserRouter>
   );
