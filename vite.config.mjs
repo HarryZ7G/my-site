@@ -5,6 +5,6 @@ export default defineConfig({
   base: "/my-site/", // Base path for the application
   plugins: [react()],
   build: {
-    outDir: "build", // CRA's default build output
+    outDir: "dist", // CRA's default build output
   },
 });
