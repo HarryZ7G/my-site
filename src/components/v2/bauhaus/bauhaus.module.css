@@ -65,9 +65,9 @@
 .baseline-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  height: calc(var(--landing-exponent) * 0.3);
-  width: calc(var(--landing-exponent) * 7);
-  margin-bottom: calc(var(--landing-exponent) * 0.8);
+  height: calc(var(--contempt-exponent) * 0.3);
+  width: calc(var(--contempt-exponent) * 7);
+  margin-bottom: calc(var(--contempt-exponent) * 0.8);
   background-color: #202124;
 }
 
@@ -83,16 +83,16 @@
   gap: 0;
   align-items: center;
   justify-content: center;
-  height: calc(var(--landing-exponent) * 3.5);
-  width: calc(var(--landing-exponent) * 7);
+  height: calc(var(--contempt-exponent) * 3.5);
+  width: calc(var(--contempt-exponent) * 7);
   /* background-color: grey; */
 }
 
 .google-bauhaus-container {
-  margin-top: calc(var(--landing-exponent) * 7 * 0.025);
-  margin-left: calc(var(--landing-exponent) * 7 * 0.025);
-  height: calc(var(--landing-exponent) * 3.5 * 0.95) !important;
-  width: calc(var(--landing-exponent) * 7 * 0.95) !important;
+  margin-top: calc(var(--contempt-exponent) * 7 * 0.025);
+  margin-left: calc(var(--contempt-exponent) * 7 * 0.025);
+  height: calc(var(--contempt-exponent) * 3.5 * 0.95) !important;
+  width: calc(var(--contempt-exponent) * 7 * 0.95) !important;
 }
 
 .ibm-bauhaus-container {
@@ -115,10 +115,10 @@
 .google-colourful {
   position: absolute;
   border-radius: 50%;
-  height: calc(var(--landing-exponent) * 0.855);
+  height: calc(var(--contempt-exponent) * 0.855);
   aspect-ratio: 1/1;
-  translate: calc(var(--landing-exponent) * 0.2)
-    calc(var(--landing-exponent) * -0.2);
+  translate: calc(var(--contempt-exponent) * 0.2)
+    calc(var(--contempt-exponent) * -0.2);
   z-index: 1;
 }
 
@@ -126,10 +126,10 @@
   position: absolute;
   background-color: #202124;
   border-radius: 50%;
-  height: calc(var(--landing-exponent) * 0.855);
+  height: calc(var(--contempt-exponent) * 0.855);
   aspect-ratio: 1/1;
-  translate: calc(var(--landing-exponent) * -0.2)
-    calc(var(--landing-exponent) * 0.2);
+  translate: calc(var(--contempt-exponent) * -0.2)
+    calc(var(--contempt-exponent) * 0.2);
   z-index: 0;
 }
 
@@ -137,7 +137,7 @@
   position: absolute;
   background-color: var(--binance-colour);
   aspect-ratio: 1/1;
-  height: calc(var(--landing-exponent) * 3.5 / 6);
+  height: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: 50% -50%;
   z-index: 1;
 }
@@ -147,7 +147,7 @@
   background-color: #000;
   aspect-ratio: 1/1;
   rotate: 45deg;
-  height: calc(var(--landing-exponent) * 3.5 / 6 * sqrt(2));
+  height: calc(var(--contempt-exponent) * 3.5 / 6 * sqrt(2));
   z-index: 0;
 }
 
@@ -155,7 +155,7 @@
   position: absolute;
   background-color: #000;
   aspect-ratio: 1/1;
-  height: calc(var(--landing-exponent) * 3.5 / 6);
+  height: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: -50% 50%;
   z-index: 0;
 }
@@ -164,9 +164,9 @@
   position: absolute;
   background-color: #82cfff;
   aspect-ratio: 2/1;
-  width: calc(var(--landing-exponent) * 3.5 / 4.35);
-  border-bottom-left-radius: calc(var(--landing-exponent) * 3.5 / 6);
-  border-bottom-right-radius: calc(var(--landing-exponent) * 3.5 / 6);
+  width: calc(var(--contempt-exponent) * 3.5 / 4.35);
+  border-bottom-left-radius: calc(var(--contempt-exponent) * 3.5 / 6);
+  border-bottom-right-radius: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: 0 -53%;
 }
 
@@ -174,9 +174,9 @@
   position: absolute;
   background-color: #be95ff;
   aspect-ratio: 2/1;
-  width: calc(var(--landing-exponent) * 3.5 / 4.35);
-  border-top-left-radius: calc(var(--landing-exponent) * 3.5 / 6);
-  border-top-right-radius: calc(var(--landing-exponent) * 3.5 / 6);
+  width: calc(var(--contempt-exponent) * 3.5 / 4.35);
+  border-top-left-radius: calc(var(--contempt-exponent) * 3.5 / 6);
+  border-top-right-radius: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: 0 53%;
 }
 
@@ -184,9 +184,9 @@
   position: absolute;
   background-color: #ff7eb6;
   aspect-ratio: 1/2;
-  height: calc(var(--landing-exponent) * 3.5 / 4.35);
-  border-top-right-radius: calc(var(--landing-exponent) * 3.5 / 6);
-  border-bottom-right-radius: calc(var(--landing-exponent) * 3.5 / 6);
+  height: calc(var(--contempt-exponent) * 3.5 / 4.35);
+  border-top-right-radius: calc(var(--contempt-exponent) * 3.5 / 6);
+  border-bottom-right-radius: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: -53% 0;
 }
 
@@ -194,9 +194,9 @@
   position: absolute;
   background-color: #3ddbd9;
   aspect-ratio: 1/2;
-  height: calc(var(--landing-exponent) * 3.5 / 4.35);
-  border-top-left-radius: calc(var(--landing-exponent) * 3.5 / 6);
-  border-bottom-left-radius: calc(var(--landing-exponent) * 3.5 / 6);
+  height: calc(var(--contempt-exponent) * 3.5 / 4.35);
+  border-top-left-radius: calc(var(--contempt-exponent) * 3.5 / 6);
+  border-bottom-left-radius: calc(var(--contempt-exponent) * 3.5 / 6);
   translate: 53% 0;
 }
 
@@ -204,7 +204,7 @@
   position: absolute;
   background-color: #b072ff;
   aspect-ratio: 1/1;
-  height: calc(var(--landing-exponent) * 7 / 9);
+  height: calc(var(--contempt-exponent) * 7 / 9);
   translate: 26% -26%;
   z-index: 1;
 }
@@ -213,7 +213,7 @@
   position: absolute;
   background-color: #202124;
   aspect-ratio: 1/1;
-  height: calc(var(--landing-exponent) * 7 / 9);
+  height: calc(var(--contempt-exponent) * 7 / 9);
   translate: -26% 26%;
   z-index: 0;
 }
@@ -225,13 +225,13 @@
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto 1fr auto;
   height: 100%;
-  width: calc(var(--landing-exponent) * 7);
+  width: calc(var(--contempt-exponent) * 7);
   justify-content: space-between;
 }
 
 .anchor-dot {
-  height: calc(var(--landing-exponent) * 0.3);
-  width: calc(var(--landing-exponent) * 0.3);
+  height: calc(var(--contempt-exponent) * 0.3);
+  width: calc(var(--contempt-exponent) * 0.3);
   opacity: 0.3;
 }
 
@@ -258,9 +258,9 @@
 .plank-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  height: calc(var(--landing-exponent) * 0.6);
-  width: calc(var(--landing-exponent) * 7);
-  margin-bottom: calc(var(--landing-exponent) * 0.3);
+  height: calc(var(--contempt-exponent) * 0.6);
+  width: calc(var(--contempt-exponent) * 7);
+  margin-bottom: calc(var(--contempt-exponent) * 0.3);
   background-color: #202124;
 }
 
@@ -273,14 +273,14 @@
 @media screen and (min-width: 1200px) {
   .university {
     flex-direction: row-reverse;
-    gap: calc(var(--landing-exponent) * 2.5);
+    gap: calc(var(--contempt-exponent) * 2.5);
   }
 }
 
 @media screen and (max-width: 1200px) {
   .university {
     flex-direction: column;
-    gap: calc(var(--landing-exponent) * 1);
+    gap: calc(var(--contempt-exponent) * 1);
   }
 }
 
@@ -288,8 +288,8 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: calc(var(--landing-exponent) * 7);
-  width: calc(var(--landing-exponent) * 21);
+  height: calc(var(--contempt-exponent) * 7);
+  width: calc(var(--contempt-exponent) * 21);
 }
 
 .triangle {
@@ -304,7 +304,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  width: calc(var(--landing-exponent) * 21);
+  width: calc(var(--contempt-exponent) * 21);
 }
 
 .st-george {
@@ -314,21 +314,21 @@
 
 .uoft-small {
   position: absolute;
-  margin-top: calc(var(--landing-exponent) * 0.15);
+  margin-top: calc(var(--contempt-exponent) * 0.15);
   color: #1e3765;
-  font-size: calc(var(--landing-exponent) * 0.8);
+  font-size: calc(var(--contempt-exponent) * 0.8);
   font-family: "Inter-Bold";
-  letter-spacing: calc(var(--landing-exponent) * 0.02);
-  line-height: calc(var(--landing-exponent) * 0.8);
+  letter-spacing: calc(var(--contempt-exponent) * 0.02);
+  line-height: calc(var(--contempt-exponent) * 0.8);
 }
 
 .uoft-large {
   position: absolute;
-  margin-top: calc(var(--landing-exponent) * 1);
+  margin-top: calc(var(--contempt-exponent) * 1);
   color: #1e3765;
-  font-size: calc(var(--landing-exponent) * 1.6);
+  font-size: calc(var(--contempt-exponent) * 1.6);
   font-family: "Inter-Medium";
-  line-height: calc(var(--landing-exponent) * 1.6);
+  line-height: calc(var(--contempt-exponent) * 1.6);
 }
 
 .rosedale {
@@ -342,20 +342,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(var(--landing-exponent) * 1);
-  width: calc(var(--landing-exponent) * 5.1);
+  height: calc(var(--contempt-exponent) * 1);
+  width: calc(var(--contempt-exponent) * 5.1);
   background-color: #1e3765;
-  border-radius: calc(var(--landing-exponent) * 0.3);
-  margin-top: calc(var(--landing-exponent) * 0.2);
+  border-radius: calc(var(--contempt-exponent) * 0.3);
+  margin-top: calc(var(--contempt-exponent) * 0.2);
 }
 
 .class-year {
   color: #fff;
   font-family: "Inter-Medium";
-  font-size: calc(var(--landing-exponent) * 0.7);
-  /* letter-spacing: calc(var(--landing-exponent) * 0.01); */
-  height: calc(var(--landing-exponent) * 0.4);
-  line-height: calc(var(--landing-exponent) * 0.4);
+  font-size: calc(var(--contempt-exponent) * 0.7);
+  /* letter-spacing: calc(var(--contempt-exponent) * 0.01); */
+  height: calc(var(--contempt-exponent) * 0.4);
+  line-height: calc(var(--contempt-exponent) * 0.4);
 }
 
 .yonge-finch {
@@ -364,7 +364,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-top: calc(var(--landing-exponent) * 1);
+  margin-top: calc(var(--contempt-exponent) * 1);
 }
 
 .bloor-yonge {
@@ -373,19 +373,19 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-top: calc(var(--landing-exponent) * 0.4);
+  margin-top: calc(var(--contempt-exponent) * 0.4);
 }
 
 .program {
   color: #1e3765;
-  font-size: calc(var(--landing-exponent) * 0.9);
+  font-size: calc(var(--contempt-exponent) * 0.9);
   font-family: "Inter-Medium";
-  line-height: calc(var(--landing-exponent) * 0.9);
+  line-height: calc(var(--contempt-exponent) * 0.9);
 }
 
 .program-faded {
   color: #1e376544;
-  font-size: calc(var(--landing-exponent) * 0.9);
+  font-size: calc(var(--contempt-exponent) * 0.9);
   font-family: "Inter-Medium";
-  line-height: calc(var(--landing-exponent) * 0.9);
+  line-height: calc(var(--contempt-exponent) * 0.9);
 }

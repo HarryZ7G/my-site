@@ -1,6 +1,6 @@
 :root {
   --landing-exponent: min(30px, 4vw, 2.3vh);
-  /* --contempt-exponent: min(20px, 4vw, 3vh); */
+  --contempt-exponent: min(20px, 4vw, 3vh);
   --binance-colour: #f3ba2f;
 }
 
