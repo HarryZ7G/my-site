@@ -1,17 +1,17 @@
 import React from "react";
-import "./App.css";
-import "./Content.css";
-import Landing from "./components/landing.js";
-import Section from "./components/section.js";
-import Portrait from "./media/Portrait Colour Compressed.jpeg";
-import Badge from "./components/badge.js";
-import Phone from "./components/phone.js";
-import Envelope from "./components/envelope";
-import Nutrition from "./components/nutrition";
-import Construction from "./components/construction.js";
-import Binance from "./components/binance.js";
+import "./Circles.css";
+import "../Content.css";
+import Landing from "../components/landing.jsx";
+import Section from "../components/section.jsx";
+import Portrait from "../media/Portrait Colour Compressed.jpeg";
+import Badge from "../components/badge.jsx";
+import Phone from "../components/phone.jsx";
+import Envelope from "../components/envelope.jsx";
+import Nutrition from "../components/nutrition.jsx";
+import Construction from "../components/construction.jsx";
+import Binance from "../components/binance.jsx";
 
-function App() {
+function Circles() {
   const [content, setContent] = React.useState(null);
 
   return (
@@ -45,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+export default Circles;

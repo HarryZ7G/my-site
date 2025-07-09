@@ -214,17 +214,17 @@
 
 @font-face {
   font-family: "happy";
-  src: url("./media/fonts/kghappy-webfont.woff2") format("woff2"),
-    url("./media/fonts/kghappy-webfont.woff") format("woff");
+  src: url("../media/fonts/kghappy-webfont.woff2") format("woff2"),
+    url("../media/fonts/kghappy-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "bouncy";
-  src: url("./media/fonts/bouncy-personal_use_only-webfont.woff2")
+  src: url("../media/fonts/bouncy-personal_use_only-webfont.woff2")
       format("woff2"),
-    url("./media/fonts/bouncy-personal_use_only-webfont.woff") format("woff");
+    url("../media/fonts/bouncy-personal_use_only-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

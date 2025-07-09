@@ -159,15 +159,19 @@
 @keyframes flash {
   0% {
     visibility: hidden;
+    opacity: 0;
   }
-  1% {
+  0.1% {
     visibility: visible;
+    opacity: 1;
   }
-  99% {
+  99.9% {
     visibility: visible;
+    opacity: 1
   }
   100% {
     visibility: hidden;
+    opacity: 0;
   }
 }
 
@@ -341,6 +345,9 @@
   bottom: calc(25vh + min(20vw, 125px, 15vh));
   display: flex;
   background-color: var(--background-colour);
+  /* background: radial-gradient(circle at center, transparent 40%, white 40.5%); */
+  background-size: 100% 100%;
+  background-position: 50% 50%;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1 / 1;
@@ -411,7 +418,8 @@
 
 .landing .name-plate .visual-cue {
   rotate: 45deg;
-  translate: calc(min(20vw, 108px, 15vh) * 2) calc(max(-20vw, -108px, -15vh) * 0.8);
+  translate: calc(min(20vw, 108px, 15vh) * 2)
+    calc(max(-20vw, -108px, -15vh) * 0.8);
 }
 
 .landing .name-plate .visual-cue .exclaim {

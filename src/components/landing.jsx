@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Exclaim from "./exclaim.js";
+import Exclaim from "./exclaim.jsx";
 import "./landing.css";
 
 function Landing(props) {
@@ -103,7 +103,7 @@ function Landing(props) {
       <div className={`name-plate ${circles[1]}`}>
         <div className={`visual-cue ${hello}`}>
           <Exclaim className="exclaim" />
-          <text className="happy">Hello</text>
+          <span className={`happy`}>Hello</span>
         </div>
         <h1 className={`title`}>Hi, I'm Harry</h1>
       </div>
