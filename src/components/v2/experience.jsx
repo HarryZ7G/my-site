@@ -12,7 +12,7 @@ function Experience(props) {
       <Baseline theme={props.company} />
       <div className="bauhaus-section">
         <Bauhaus theme={props.company} rows={4} />
-        <Anchor theme={props.company} />
+        {/* <Anchor theme={props.company} /> */}
       </div>
       <h2>{props.title}</h2>
       <div className="platform">
