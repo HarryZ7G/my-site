@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../../pages/Contempt.css";
+import styles from "./landing.module.css";
 
 function Landing() {
   const [cliff, setCliff] = React.useState("cliff-init");
@@ -59,32 +59,32 @@ function Landing() {
   }, []);
 
   return (
-    <div className="landing-cluster">
-      <div className="cliff-cluster">
-        {/* <div className="anchor-pixel" /> */}
-        <div className={`cliff ${cliff}`}>
-          <h1 className={cliffText}>Hello</h1>
+    <div className={styles['landing-cluster']}>
+      <div className={styles['cliff-cluster']}>
+        {/* <div className={styles['anchor-pixel']} /> */}
+        <div className={`${styles.cliff} ${styles[cliff]}`}>
+          <h1 className={styles[cliffText]}>Hello</h1>
         </div>
-        <div className={`cliff-shadow ${firstCliffShadow}`} />
-        <div className={`cliff-shadow ${secondCliffShadow}`} />
-        <div className={`cliff-shadow ${thirdCliffShadow}`} />
+        <div className={`${styles['cliff-shadow']} ${styles[firstCliffShadow]}`} />
+        <div className={`${styles['cliff-shadow']} ${styles[secondCliffShadow]}`} />
+        <div className={`${styles['cliff-shadow']} ${styles[thirdCliffShadow]}`} />
       </div>
-      <div className="book-cluster">
-        <div className={`book-cover ${bookCover}`}>
-          <h2 className={`book-title ${bookTitle}`}>
+      <div className={styles['book-cluster']}>
+        <div className={`${styles['book-cover']} ${styles[bookCover]}`}>
+          <h2 className={`${styles['book-title']} ${styles[bookTitle]}`}>
             HARRY
             <br />
             GENG
           </h2>
-          <h3 className={`book-description ${bookDescription}`}>
+          <h3 className={`${styles['book-description']} ${styles[bookDescription]}`}>
             A brief introduction
           </h3>
         </div>
-        <div className={`book-frame ${firstBookFrame}`}>
-          <div className="bookmark" />
+        <div className={`${styles['book-frame']} ${styles[firstBookFrame]}`}>
+          <div className={styles.bookmark} />
         </div>
-        <div className={`book-frame ${secondBookFrame}`} />
-        <div className={`book-frame ${thirdBookFrame}`} />
+        <div className={`${styles['book-frame']} ${styles[secondBookFrame]}`} />
+        <div className={`${styles['book-frame']} ${styles[thirdBookFrame]}`} />
       </div>
     </div>
   );
