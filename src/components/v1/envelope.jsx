@@ -1,6 +1,6 @@
 import React from "react";
 import "./envelope.css";
-import UofT from "../media/UofT.png";
+import UofT from "../../media/UofT.png";
 
 function Envelope() {
   return (

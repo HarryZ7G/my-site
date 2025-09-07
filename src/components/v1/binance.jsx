@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import BinanceLogo from "../media/Binance.png";
-import BinanceImage from "../media/BinancePage.jpeg";
+import BinanceLogo from "../../media/Binance.png";
+import BinanceImage from "../../media/BinancePage.jpeg";
 import "./binance.css";
 
 function Binance() {

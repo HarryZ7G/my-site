@@ -1,15 +1,15 @@
 import React from "react";
 import "./Circles.css";
 import "../Content.css";
-import Landing from "../components/landing.jsx";
-import Section from "../components/section.jsx";
+import Landing from "../components/v1/landing.jsx";
+import Section from "../components/v1/section.jsx";
 import Portrait from "../media/Portrait Colour Compressed.jpeg";
-import Badge from "../components/badge.jsx";
-import Phone from "../components/phone.jsx";
-import Envelope from "../components/envelope.jsx";
-import Nutrition from "../components/nutrition.jsx";
-import Construction from "../components/construction.jsx";
-import Binance from "../components/binance.jsx";
+import Badge from "../components/v1/badge.jsx";
+import Phone from "../components/v1/phone.jsx";
+import Envelope from "../components/v1/envelope.jsx";
+import Nutrition from "../components/v1/nutrition.jsx";
+import Construction from "../components/v1/construction.jsx";
+import Binance from "../components/v1/binance.jsx";
 
 function Circles() {
   const [content, setContent] = React.useState(null);

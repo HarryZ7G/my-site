@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import "./phone.css";
-import MCG from "../media/MCG.png";
+import MCG from "../../media/MCG.png";
 // import Star from "./star";
-import ConsultingDay from "../media/ConsultingDay.jpg";
-import CaseComp from "../media/CaseComp.jpg";
+import ConsultingDay from "../../media/ConsultingDay.jpg";
+import CaseComp from "../../media/CaseComp.jpg";
 
 function Phone() {
   const phoneRef = useRef(null);

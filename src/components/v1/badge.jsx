@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import "./badge.css";
 import QR from "./qr.jsx";
-import IBM from "../media/IBM.png";
-import Java from "../media/icons/Java.svg";
-import Jenkins from "../media/icons/Jenkins.svg";
-import Kafka from "../media/icons/Kafka.svg";
-import Linux from "../media/icons/Linux.svg";
-import Oracle from "../media/icons/Oracle.svg";
+import IBM from "../../media/IBM.png";
+import Java from "../../media/icons/Java.svg";
+import Jenkins from "../../media/icons/Jenkins.svg";
+import Kafka from "../../media/icons/Kafka.svg";
+import Linux from "../../media/icons/Linux.svg";
+import Oracle from "../../media/icons/Oracle.svg";
 
 function Badge() {
   const badgeRef = useRef(null);
