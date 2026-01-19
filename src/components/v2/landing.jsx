@@ -7,7 +7,8 @@ function Landing() {
   const [firstCliffShadow, setFirstCliffShadow] = React.useState("hidden");
   const [secondCliffShadow, setSecondCliffShadow] = React.useState("hidden");
   const [thirdCliffShadow, setThirdCliffShadow] = React.useState("hidden");
-  const [bookCover, setBookCover] = React.useState("book-cover-init hidden");
+  const [bookCover, setBookCover] = React.useState("book-cover-init");
+  const [isBookCoverHidden, setIsBookCoverHidden] = React.useState(true);
   const [bookTitle, setBookTitle] = React.useState("hidden");
   const [bookDescription, setBookDescription] = React.useState("hidden");
   const [firstBookFrame, setFirstBookFrame] = React.useState("hidden");
@@ -40,7 +41,8 @@ function Landing() {
       }, 1000);
     }, 2500);
     setTimeout(() => {
-      setBookCover("book-cover-init");
+      setIsBookCoverHidden(false);
+      // setBookCover("book-cover-init"); // Already initialized
       setTimeout(() => {
         setBookCover("book-cover-final");
       }, 200);
@@ -70,7 +72,7 @@ function Landing() {
         <div className={`${styles['cliff-shadow']} ${styles[thirdCliffShadow]}`} />
       </div>
       <div className={styles['book-cluster']}>
-        <div className={`${styles['book-cover']} ${styles[bookCover]}`}>
+        <div className={`${styles['book-cover']} ${styles[bookCover]} ${isBookCoverHidden ? styles.hidden : ''}`}>
           <h2 className={`${styles['book-title']} ${styles[bookTitle]}`}>
             HARRY
             <br />
